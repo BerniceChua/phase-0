@@ -22,47 +22,56 @@ My favorite new ones are actually http://pomodorotechnique.com/ignore-the-unicor
 
 So that answers the question "Which time management and productivity ideas did you learn about?".  It's not that I learned something new, but it's more of what already know is reinforced as something good.  
 
- 
 
-What is "Time Boxing?" How can you use it in Phase 0?
-Time boxing is an Agile approach where a person or a team works steadily towards completion of some goal at a previously agreed period of time, and consists of stopping work when the time limit is reached and evaluating what was accomplished. -- instead of allowing work to continue until the goal is reached.  It can be used in Phase 0 to pace myself and to see how much I can do within a set amount of time, probably in conjunction with a Pomodoro.  At the same time, if I don't complete a task within the alloted time of timeboxing, I can use that break time afterwards so I can have my mind refreshed.  Also, it's a good way to force myself to realize that I'm stuck on something so the end of the timebox might be a good time to ask questions.  
+- What is "Time Boxing?" How can you use it in Phase 0?
 
-How do you manage your time currently?
-Currently, this is my strategy:
+   Time boxing is an Agile approach where a person or a team works steadily towards completion of some goal at a previously agreed period of time, and consists of stopping work when the time limit is reached and evaluating what was accomplished. -- instead of allowing work to continue until the goal is reached.  It can be used in Phase 0 to pace myself and to see how much I can do within a set amount of time, probably in conjunction with a Pomodoro.  At the same time, if I don't complete a task within the alloted time of timeboxing, I can use that break time afterwards so I can have my mind refreshed.  Also, it's a good way to force myself to realize that I'm stuck on something so the end of the timebox might be a good time to ask questions.  
 
-I manage my time by extensively using my Google calendar & to-do list (there's a to-do list inside Google calendar & my phone, then there's the separate to-do list inside Canvas) and using a Pomodoro for each item in my to-do list.  
+- How do you manage your time currently?
 
-In the evening before I sleep, I look at the to-do list for the next day's calendar, then prioritize which one needs to be done first.  Since I don't have to worry about remembering what I need to do the next day, I just sleep peacefully.  In the morning, I use an alarm clock to wake me up.  
+   Currently, this is my strategy:
 
-In the day time, I just look at the calendar and to-do list, and for each item in the to-do list, I set a Pomodoro timer for it.  When I get a new idea or have something else that I want to do while I'm in a Pomodoro, I add it to my to-do list so I don't have to worry about forgetting it.  (Example of using a cue/trigger to signal a reaction/habit.)  
+   I manage my time by extensively using my Google calendar & to-do list (there's a to-do list inside Google calendar & my phone, then there's the separate to-do list inside Canvas) and using a Pomodoro for each item in my to-do list.  
 
-Also I set an alarm clock for what time I need to start doing something, what time I'll need to be leaving from a place (due to how long it takes to get somewhere like for example traffic), etc.  The alarms are good cues/triggers also.  
+   In the evening before I sleep, I look at the to-do list for the next day's calendar, then prioritize which one needs to be done first.  Since I don't have to worry about remembering what I need to do the next day, I just sleep peacefully.  In the morning, I use an alarm clock to wake me up.  
 
-Is your current strategy working? If not, why not?
-Before reaching this strategy, I experimented with a bunch of other strategies to see what suits me the best.  They emphasize a process over a product, and they were cues/triggers that helped me build small habits over time.  The current strategy works for me because I can see where I need to go/where my appointments are at specific times, and what I need to accomplish so I don't have to think about what I need to do next because I just do it.  If some emergency happens and I need to be taken away from my work, it's easy to remember where I was at.  The strategy works most of the time when nobody is around to interrupt me, but I always let people know what I'm doing with my time so they will not interrupt me.  It does not work all the time, because sometimes people don't understand what I'm doing and they get mad that they need to be fit into my schedule.  
+   In the day time, I just look at the calendar and to-do list, and for each item in the to-do list, I set a Pomodoro timer for it.  When I get a new idea or have something else that I want to do while I'm in a Pomodoro, I add it to my to-do list so I don't have to worry about forgetting it.  (Example of using a cue/trigger to signal a reaction/habit.)  
 
-Can/will you employ any of them? If so, how?
-I will try to employ timeboxing in addition to what I already do, because timeboxing is a new idea for me since I like finishing something when the goal is reached/when it is completed.  What I used to do is to chain several Pomodoros and 5-minute break-times together until I finish something.  But it's always good to try something new and see if it will make me better.  
+   Also I set an alarm clock for what time I need to start doing something, what time I'll need to be leaving from a place (due to how long it takes to get somewhere like for example traffic), etc.  The alarms are good cues/triggers also.  
 
-What is your overall plan for Phase 0 time management?
-My overall plan for Phase 0 time management is my current routine mentioned above because it is effective and proven to work.  But I will incorporate timeboxing because that way, I have a finite amount of time, and when I go over that time threshold and cannot figure something out, that's my signal that it's time to ask for help.  
+- Is your current strategy working? If not, why not?
+
+   Before reaching this strategy, I experimented with a bunch of other strategies to see what suits me the best.  They emphasize a process over a product, and they were cues/triggers that helped me build small habits over time.  The current strategy works for me because I can see where I need to go/where my appointments are at specific times, and what I need to accomplish so I don't have to think about what I need to do next because I just do it.  If some emergency happens and I need to be taken away from my work, it's easy to remember where I was at.  The strategy works most of the time when nobody is around to interrupt me, but I always let people know what I'm doing with my time so they will not interrupt me.  It does not work all the time, because sometimes people don't understand what I'm doing and they get mad that they need to be fit into my schedule.  
+
+- Can/will you employ any of them? If so, how?
+
+   I will try to employ timeboxing in addition to what I already do, because timeboxing is a new idea for me since I like finishing something when the goal is reached/when it is completed.  What I used to do is to chain several Pomodoros and 5-minute break-times together until I finish something.  But it's always good to try something new and see if it will make me better.  
+
+- What is your overall plan for Phase 0 time management?
+
+   My overall plan for Phase 0 time management is my current routine mentioned above because it is effective and proven to work.  But I will incorporate timeboxing because that way, I have a finite amount of time, and when I go over that time threshold and cannot figure something out, that's my signal that it's time to ask for help.  
 
 ## 1.2 The Command Line Reflection
 1. What is a shell? What is "bash?"
+
    The shell is a kind of UI (user interface) to access an operating system.  There are 2 kinds of shells: CLI (command line interface), where everything is bare bones text display and just words and our inputs are only text commands.  GUI (graphical user interface), where we can use both the keyboard and the cursor as inputs.
 
    "bash" stands for "Born Again Shell", and is a kind of CLI.  
 
 2. What was the most challenging for you in going through this material?
+
    It was not challenging for me at all, because I use the command line a lot.
 
 3. Were you able to successfully use all of the commands?
+
    Yes.
 
 4. In your opinion, what are the most important commands and arguments to know?
+
    In my opinion, the most important commands to know are "help" and "man", because if someone can access those, even if they don't remember the other commands, then "help" can help them with the command that they need, and "man" is the manual of the shell, so it has the guide/documentation for the syntax, etc. of the commands in the command line and what else you can do with them.
 
 5. Can you remember what each of the following does of the top of your head?
+
    Yes.
 
 6. Write what each does.
@@ -93,6 +102,7 @@ My overall plan for Phase 0 time management is my current routine mentioned abov
 
 ## 1.4 Forking and Cloning Reflection
 1. If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be?
+
 Instructions for creating a new repo:
 
 > Step 1 - If you don't have this already, create a login and password in GitHub.  
@@ -108,6 +118,7 @@ Instructions for creating a new repo:
 > Step 6 - When you have made sure that everything in Step 5 is to your liking, please click "Create Repository".  Congratulations!  You have made a repository in GitHub.
 
 > Step 7 - In order to add more files to this repository, let us link it to your local machine through git.  For this, please make sure that you have git installed from here: https://git-scm.com/downloads (Links to an external site.)
+
 > `git config --global user.name "Your GitHub Username Here"`
 
 > `git config --global user.email "your.email@address.com"`
@@ -120,27 +131,27 @@ Instructions for forking an existing repo:
 
 > Step 1 - If you don't have this already, create a login and password in GitHub.  
 
-Step 2 - Please go to the GitHub page of whichever repo you'd wish to fork.
+> Step 2 - Please go to the GitHub page of whichever repo you'd wish to fork.
 
-Step 3 - On the upper right corner of the screen, under your avatar/picture, there is a button called "Fork".  Please click on this.  
+> Step 3 - On the upper right corner of the screen, under your avatar/picture, there is a button called "Fork".  Please click on this.  
 
-Step 4 - Congratulations!  You have successfully forked a repo.  You'll know that you have done this correctly if the name before the slash of the repo name is your own username, and under that, it says "forked from originalUser/source" or something like that, and the picture beside it is a branch instead of a book.  
+> Step 4 - Congratulations!  You have successfully forked a repo.  You'll know that you have done this correctly if the name before the slash of the repo name is your own username, and under that, it says "forked from originalUser/source" or something like that, and the picture beside it is a branch instead of a book.  
 
-Step 5 -  In order to add more files to this repository, let us link it to your local machine through git.  For this, please make sure that you have git installed from here: https://git-scm.com/downloads (Links to an external site.).
+> Step 5 -  In order to add more files to this repository, let us link it to your local machine through git.  For this, please make sure that you have git installed from here: https://git-scm.com/downloads (Links to an external site.).
 
-Step 6 - On the right sidebar of the forked repo's page, there is a box under "HTTPS clone URL".  Please click the box beside it that says "Copy to clipboard" when you hover over it.
+> Step 6 - On the right sidebar of the forked repo's page, there is a box under "HTTPS clone URL".  Please click the box beside it that says "Copy to clipboard" when you hover over it.
 
-Step 7 - Please open your CLI.  Please "cd" to the directory where you want to save your cloned git repos.
+> Step 7 - Please open your CLI.  Please "cd" to the directory where you want to save your cloned git repos.
 
-Step 8 - Once you are in the directory that you want, please type this command:
+> Step 8 - Once you are in the directory that you want, please type this command:
 
-`git clone ` (and before hitting "Enter" on the keyboard, paste the URL that was copied in Step 6.  NOW, hit Enter).
+> `git clone ` (and before hitting "Enter" on the keyboard, paste the URL that was copied in Step 6.  NOW, hit Enter).
 
-Congratulations!  You now have a copy of this forked repo on your desktop.
+> Congratulations!  You now have a copy of this forked repo on your desktop.
 
 (The End)
 
- 
+
 
 2. Why would you fork a repository as opposed to create a new one?
 
