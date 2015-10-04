@@ -122,3 +122,61 @@ If you type "help [name of command here]", it will display more about the comman
 If you type "[command] --help", it will show you the usage options of what you can do with the command you are asking help about.
 
 ## 1.4 Forking and Cloning Reflection
+If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be?
+Instructions for creating a new repo:
+
+Step 1 - If you don't have this already, create a login and password in GitHub.  
+
+Step 2 - In your own GitHub page, look for the "+" sign on the upper right corner beside your avatar/picture.  You'll know you're in the right place because when you hover over it, a sign will appear that says "Create new...".
+
+Step 3 - Click on "+" sign on upper right corner beside your avatar/picture.  A dropdown menu appears.
+
+Step 4 - On dropdown menu, please click "New repository".  A new screen will appear.
+
+Step 5 - In this new screen, you can customize things about your repo such as the name.  Please choose the name of your repo, choose whether or not the repo is public vs. private, and choose what kind of license is being used, since these are required.  The others are optional, but you can add information on them if you want.  
+
+Step 6 - When you have made sure that everything in Step 5 is to your liking, please click "Create Repository".  Congratulations!  You have made a repository in GitHub.
+
+Step 7 - In order to add more files to this repository, let us link it to your local machine through git.  For this, please make sure that you have git installed from here: https://git-scm.com/downloads (Links to an external site.)
+
+Step 8 - please type these commands to associate your local machine's git with your GitHub account:
+
+'git config --global user.name "Your GitHub Username Here" '
+
+'git config --global user.email "your.email@address.com" '
+
+(The End)
+
+ 
+
+Instructions for forking an existing repo:
+
+Step 1 - If you don't have this already, create a login and password in GitHub.  
+
+Step 2 - Please go to the GitHub page of whichever repo you'd wish to fork.
+
+Step 3 - On the upper right corner of the screen, under your avatar/picture, there is a button called "Fork".  Please click on this.  
+
+Step 4 - Congratulations!  You have successfully forked a repo.  You'll know that you have done this correctly if the name before the slash of the repo name is your own username, and under that, it says "forked from originalUser/source" or something like that, and the picture beside it is a branch instead of a book.  
+
+Step 5 -  In order to add more files to this repository, let us link it to your local machine through git.  For this, please make sure that you have git installed from here: https://git-scm.com/downloads (Links to an external site.).
+
+Step 6 - On the right sidebar of the forked repo's page, there is a box under "HTTPS clone URL".  Please click the box beside it that says "Copy to clipboard" when you hover over it.
+
+Step 7 - Please open your CLI.  Please "cd" to the directory where you want to save your cloned git repos.
+
+Step 8 - Once you are in the directory that you want, please type this command:
+
+'git clone ' (and before hitting "Enter" on the keyboard, paste the URL that was copied in Step 6.  NOW, hit Enter).
+
+Congratulations!  You now have a copy of this forked repo on your desktop.
+
+(The End)
+
+ 
+
+Why would you fork a repository as opposed to create a new one?
+The answer to this question really depends on what you want to do.  If you want to create something from scratch, then you would create a new repository.  But if you want to work on existing code, then it is better to fork a repository instead of creating a new one, so that you don't have to copy each file manually.  
+
+What struggles did you have setting up git and GitHub? What did you learn in the process?
+I did not struggle setting up git and GitHub this time, because I used it for work before.  For that reason, I knew that git is different than GitHub, because my former work used a different place to host the master branch of their repo, with its own login and password.  But I can remember what it was like when I set up git and GitHub for my very first time.  During the very first time that I created a downloaded and installed git, I tried to create a local repository following the instructions in the guide at https://git-scm.com/documentation (Links to an external site.).  I missed some steps, so I wanted to start from the beginning, but I got error messages because I had already did "git init" for the first time therefor of course git did not allow me to do that again for the directory where I was at, when I typed "git remote add origin <URL.FROM.MY.GITHUB>".  
