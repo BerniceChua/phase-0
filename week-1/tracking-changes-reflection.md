@@ -46,5 +46,5 @@
 
 Submit the link to your reflection file. It should be located at:
 
-https://github.com/BerniceChua/phase-0/blob/master/week-1/reflections.md
-https://github.com/BerniceChua/phase-0/blob/master/week-1/tracking-changes-reflection.md
+- https://github.com/BerniceChua/phase-0/blob/master/week-1/reflections.md
+- https://github.com/BerniceChua/phase-0/blob/master/week-1/tracking-changes-reflection.md
