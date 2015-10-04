@@ -27,6 +27,8 @@
 
     > `git commit -m "imperative message here"` (saved state, prepares the changes to be pushed to the remote repository)
 
+    > `git push origin [your-branch-name-here]` (pushes the changes to the remote repository)
+
     > `git checkout master` (moves your view into the master branch)
 
     > either `git pull origin master`, or `git fetch origin master` then `git merge origin/master` (merges all the changes)
