@@ -1,3 +1,5 @@
+Using your command line, create a new file called tracking-changes-reflection.md in the week-1 directory.
+
 1. Open the file in sublime. Copy the following questions in it and answer them.
   - How does tracking and adding changes make developers' lives easier?
 
