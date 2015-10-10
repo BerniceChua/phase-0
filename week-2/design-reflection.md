@@ -1,5 +1,5 @@
 My sitemap:
-![My sitemap](/img/site-map.png)
+![My sitemap](week-2/img/site-map.png)
 
 In the reflection file you just created, copy and answer the following questions (or create a video and link to it). 
 
