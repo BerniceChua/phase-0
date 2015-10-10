@@ -29,7 +29,7 @@ In the reflection file you just created, copy and answer the following questions
 
 - What is user experience design and why is it valuable? 
 
-   User Exeprience (UX) design is valuable because if the user's experience is bad, the product (website, program, app, physical thing) does not accomplish what it needs (informing people, addressing a need), and people will not want to use the product because they will be annoyed and frustrated.  
+   User Exeprience (UX) design is valuable because if the user's experience is bad, the product (website, program, app, physical thing) does not accomplish what it needs (informing people, addressing a need), and people will not want to use the product because they will be annoyed and frustrated.  So all the effort into creating the product will just be wasted.  Plus, it might give the creators a bad reputation.  
 
 - Which parts of the challenge did you find tedious?
 
