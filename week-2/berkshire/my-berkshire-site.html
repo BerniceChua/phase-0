@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- 
+			- What was it like to translate your previous learning with HTML into an actual site?
+			-- Jacob: "Everything that we learned in theory worked exactly the same as in practice. Translating a page into html was fairly straightforward and there was very little that we had to research."
+			-- Bernice: "I have previous experience with HTML, but I remember the first time that I wrote code for a page, it was nice to feel that even though writing code looked intimidating and complicated, it's do-able."
+
+			- How was it researching and using semantic HTML5 elements?
+			-- Jacob: Since we have yet to work with CSS, the purpose of semantic elements is still slightly unclear to me. I am a kinesthetic learner, so I will understand their purpose better once we use them to make styling easier.
+			-- Bernice: "Researching how to use the semantic HTML5 elements was easy and straightforward.  Jacob & I discussed why someone would use a div as opposed to a table, and everything really depends on the purpose of that part in the code."
+
+			- How did you do at keeping to best practices (i.e. no formatting in the HTML)
+			-- Jacob: "I think we did very well at keeping to best practices in our code. For example, we did nothing to adjust the style of the page; we worked strictly with HTML and did not worry about the size of text, its color, etc."
+			-- Bernice: "It was easy to keep best practices i.e no formatting in HTML, because the rules were straightforward and simple to follow."
+
+			- What seems good and bad about HTML?
+			-- Jacob: I haven't worked with HTML for long enough to understand why it's preferable over other markup languanges. From my research, it seems that HTML is the only universally-used markup language. For a beginner, it seems the tags may become confusing. Sublime doesn't alert us if we make mistakes in our code, so we must verify it using an online tool once in a while to make sure we haven't forgotten to close a tag.
+			-- Bernice: 
+				"
+					A. Good things about HTML:
+						1. Easy to see the output right away, as opposed to .md files.  So if there's a mistake, it can be corrected right away.
+						2. HTML is more "universal", so it's easy for many people to read it.  
+						3. The person in charge of making the content can just concentrate on writing the content & structure.  The tags/markups makes HTML really flexible in terms of how something will be presented later through CSS or jQuery or something else.
+					 B. Bad things about HTML:
+					 	1. Very easy to lose track of the tags.
+					 	2. A little tedious, but not as tedious as .md files.
+				"
+			- What tricks do you have for remembering how to write HTML?
+			-- Jacob: At this point, I can't honestly say I have developed any "tricks." I find I remember tags only after practicing them; memory tricks such as acronyms and sequencing only have limited effect for me.
+			-- Bernice: "A trick that I remember for how to write HTML is to write the tags first, then fill in the content later; since this makes it easier to keep track of whether the tags are closed."
+		 -->
 		<title>BERKSHIRE HATHAWAY INC.</title>
 	</head>
 	<body>
-		<a href="#">Placeholder</a>
-		
 		<div class="header">
 			<h1>BERKSHIRE HATHAWAY INC.</h1>
-			<h2>3555 Farnam Street <br>
-Omaha, NE 68131 <br>
-Official Home Page</h2>
+			<h2>
+				<span>3555 Farnam Street </span>
+				<span>Omaha, NE 68131 </span>
+				<span>Official Home Page</span>
+			</h2>
 		</div>
 		<div class="body">
 			<div class="column1">
@@ -64,7 +93,12 @@ Official Home Page</h2>
 			<div class="feedback">
 				<p>If you have any comments about our WEB page, you can either write us at the address shown above or e-mail us at <a href="mailto:#">berkshire@berkshirehathaway.com</a>. However, due to the limited number of personnel in our corporate office, we are unable to provide a direct response.</p>
 			</div>
-			<div class="legal"></div>
+			<div class="legal">
+				<p><span><a href="#">Legal Disclaimer</a> </span>
+			
+					<span>Copyright &copy; 1978-2015 Berkshire Hathaway Inc.</span>
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
