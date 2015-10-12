@@ -13,7 +13,11 @@ In the reflection file you just created, answer the following questions.
 
 1. What is a wireframe?
 
+<<<<<<< HEAD
    A wireframe is like a blueprint or plan of the layout of the design of a website according to how the designer wants the user to process information presented.  It is usually done in a very bare-bones style so as not to get distracted by the colors or typefaces.  
+=======
+   A wireframe is like a blueprint or plan of the layout of the design of a website according to how the designer wants the user to process information presented.  It is usually done in a very bare-bones style so as not to get distracted by the colors or typefaces.
+>>>>>>> 03b9b93f56ea827957e1414ac0c4f254e192b42a
 
 2. What are the benefits of wireframing?
 
@@ -21,8 +25,11 @@ In the reflection file you just created, answer the following questions.
 
    This testing is useful because we don't need to waste too much time coding for the style of something that appeared like a cool idea in our heads, but it turns out to be something that we didn't want.  
 
+<<<<<<< HEAD
    The other benefit of why a wireframe is simple and bare-bones is so that the person(s) working on it will not be too invested in the idea, and it will be easier to change the layout/style later since nobody is really that invested in the style/layout.  
 
+=======
+>>>>>>> 03b9b93f56ea827957e1414ac0c4f254e192b42a
 3. Did you enjoy wireframing your site?
 
    Yes, wireframing became enjoyable after getting used to it, and getting "in the zone", when all the ideas come out.  
