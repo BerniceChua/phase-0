@@ -1,3 +1,39 @@
+/*
+	
+    - What is important to know when linking an external file (like a 
+    stylesheet) to an HTML file?
+
+	It is important to make sure that the path to the external file is 
+	correct, or else the effects of that file won't appear in the HTML 
+	file.  
+
+	Also, it is important to make the syntax correct, like this:
+	<link rel="stylesheet" type="text/css" href="path/of/my/stylesheet.css">
+
+    - What tricks did you use to help you with positioning? How hard 
+    was it to get the site as you wanted it?  
+
+	To help with positioning, we used float; width; padding-bottom; 
+	font-size; padding-top; margin-top; & display.  
+
+    - What CSS did you use to modify the element style (like size, color, etc.)
+
+	We used: background-color; color; text-align; font-variant; font-size; 
+	font-weight; border-top; border-left; border-right; border-bottom; border-color;
+	border-style; float; width; padding-bottom; font-size; padding-top; margin-top; 
+	& display.  
+
+    - Did you modify the HTML to include classes or ids? If so, which did you 
+    chose and why? If you didn't, how would you know which one to add to your HTML?
+    When you compared your site to the actual code base, which do you think had 
+    cleaner code that followed best practices and why?
+
+    Yes, we modified the HTML file to include classes, but no IDs.  We chose classes, 
+    because they are more 
+
+*/
+
+
 body {
 	background-color: #ffffff;
 	color: #000080;
