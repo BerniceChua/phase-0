@@ -1,7 +1,7 @@
 /*
 	
-    - What is important to know when linking an external file (like a 
-    stylesheet) to an HTML file?
+    1. What is important to know when linking an external file (like a 
+    stylesheet) to an HTML file?  
 
 	It is important to make sure that the path to the external file is 
 	correct, or else the effects of that file won't appear in the HTML 
@@ -10,26 +10,97 @@
 	Also, it is important to make the syntax correct, like this:
 	<link rel="stylesheet" type="text/css" href="path/of/my/stylesheet.css">
 
-    - What tricks did you use to help you with positioning? How hard 
+
+    2. What tricks did you use to help you with positioning? How hard 
     was it to get the site as you wanted it?  
 
-	To help with positioning, we used float; width; padding-bottom; 
-	font-size; padding-top; margin-top; & display.  
+	To help with positioning in this particular work, we used:
+	-- float = sets the element to drift towards the edge of the direction that we want.
+	-- width = sets the width of the chosen element.  
+	-- padding-bottom = distance between the bottom of the selected element and the 
+		element below it.
+		If there's no element above it, distance between the selected element and the 
+		element/container that it stays in (outside).  
+	-- font-size = size of the words and numbers.  
+	-- padding-top = distance between the top of the selected element and the element above it.
+		If there's no element above it, distance between the selected element and the 
+		element/container that it stays in (outside).  
+	-- margin-top = distance between the top of the words/numbers that live inside an element
+		to the top of the element (inside).
+	-- display = sets how the element will be displayed.  
+		The attribute that we used for display are:
+			inline = the element will sit on the same row as another element.
+			inline-block = the element will have its own row.  
 
-    - What CSS did you use to modify the element style (like size, color, etc.)
+	It was a bit difficult to get the positioning and appearance that we 
+	wanted for each element, because we tried to use relative units as much 
+	as possible, and we were not familiar/not sure about what they were supposed 
+	to look like.  Fortunately, it is easy to trial-and-error, because we can 
+	just save the CSS file and reload the webpage in the browser.  
 
-	We used: background-color; color; text-align; font-variant; font-size; 
+
+    3. What CSS did you use to modify the element style (like size, color, etc.)
+
+	We used: 
+	-- background-color; color; text-align; font-variant; font-size; 
 	font-weight; border-top; border-left; border-right; border-bottom; border-color;
 	border-style; float; width; padding-bottom; font-size; padding-top; margin-top; 
 	& display.  
 
-    - Did you modify the HTML to include classes or ids? If so, which did you 
+	The names are self-explanatory.  The ones that are not are here: 
+	-- text-align = whether a text is aligned left, right, justified, or in the center.  
+	-- font-variant = has the option to make "small-caps", which just means that the 
+		lowercase letters become mini-capitalized letters.  
+	-- font-weight = how thick or thin the fonts are.  Includes "bold" typeface.  
+	The explanation of the other non-intuitive ones are in #2.  
+
+
+    4. Did you modify the HTML to include classes or ids? If so, which did you 
     chose and why? If you didn't, how would you know which one to add to your HTML?
     When you compared your site to the actual code base, which do you think had 
     cleaner code that followed best practices and why?
 
     Yes, we modified the HTML file to include classes, but no IDs.  We chose classes, 
-    because they are more 
+    because they are more portable, and more than one class can be used to style one 
+    element.  For example, in our code we wanted a particular line to have multiple 
+    attributes, so we did this: 
+
+    <span class="description-text separate-line">Updated August 10, 2015</span>;
+
+    When we did that, that string of characters  got the attributes of these 2 
+    classes at the same time:
+    
+    .description-text {
+		font-size: .60em;
+		padding-top: .5%;
+		margin-top: .5%;
+	}
+	&
+	.separate-line {
+		display: block;
+	}
+
+	That cannot be done with ID selectors, because if I were to use an ID, it would look like this:
+	#description-text {
+		font-size: .60em;
+		padding-top: .5%;
+		margin-top: .5%;
+	}
+	&
+	#separate-line {
+		display: block;
+	}	
+
+	<span id="description-text" id="separate-line">Updated August 10, 2015</span>;
+
+	ID selectors cannot be combined the same way that class selectors can be done.  
+	This is why IDs are messier, because there is more typing involved, especially if 
+	the html will have a lot of attributes, like more than 5.  
+
+	Also, ID selectors should only be used once per HTML file, so ID tags should only 
+	be used in special cases that should not repeat.  That is why we used class 
+	selectors, so if we wanted another HTML element to look the same, we didn't need 
+	to make a new ID selector for it.  
 
 */
 
