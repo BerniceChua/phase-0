@@ -1,0 +1,78 @@
+body {
+	background-color: #ffffff;
+	color: #000080;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+header > div > h1 {
+	font-variant:small-caps;	
+}
+
+header > div > h1 > span {
+	font-size: 1rem;
+}
+
+header > div > p {
+	font-weight: bold;
+	font-size: .8rem;
+}
+
+header > div > p > span:last-child {
+	font-size: 1rem;
+}
+
+.border-style {
+	border-top: 1px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-color: gray;
+	border-style: solid;
+}
+
+a {
+	color: #800080;
+}
+
+a:visited {
+	color: #ff0000;
+}
+
+.column1 {
+	float: left;
+	width: 50%;
+}
+
+.column2 {
+	float: right;
+	width: 50%;
+}
+
+li {
+	padding-bottom: 7%;
+}
+
+.description-text {
+	font-size: .60em;
+	padding-top: .5%;
+	margin-top: .5%;
+}
+
+.geico-font {
+	font-size: .60rem;
+}
+
+.feedback-font {
+	font-size: .8rem;
+}
+
+footer {
+	display: inline-block;
+}
+
+.separate-line {
+	display: block;
+}
