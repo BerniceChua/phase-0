@@ -9,34 +9,51 @@ body {
 #div-1 {
   border: 1px solid black;
   background-color: red;
-  position: auto;
-  margin-bottom: 200px;
-  display: inline-block;
+  position: ;
+  width: 25em;
+  height: 25em;
+  /*bottom: 0;*/
+  left: 0;
 }
 #div-2 {
   background-color: #e67e22;
-  position: auto;
-  top: 0px;
-  left: 50px;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
+  width: 25em;
+  height: 25em;
+/*  margin-left: 5em;
+  margin-top: 5em;*/
+  top: 0;
+  width: 50%;
+  position: fixed;
+  margin-left: auto;
+  left: 0;
+  margin-right: auto;
+  right: 0;
+  border-bottom-left-radius: 100px;
 }
 #div-3 {
   background-color: SlateBlue;
-  position: auto;
-  top: 240px;
-  left: 30px;
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  top: 0;
+  /*left: 30px;*/
+  width: 15%;
+  height: 100%;
   display: inline-block;
+  /*width: 5em;*/
+  /*height: 5em;*/
+/*  margin-left: 5em;
+  margin-top: 5em;*/
+  right: 0;
 }
 #div-4 {
   background-color: rgba(22, 160, 133,1.0);
   width: 300px;
-  position: auto;
-  top: 100px;
+  height: 10em;
+  position: fixed;
+  /*top: 100px;*/
   left: 200px;
   height: 100px;
   display: inline-block;
+  margin-left: 20em;
+  margin-top: -20em;
+  border-radius: 100%;
 }
