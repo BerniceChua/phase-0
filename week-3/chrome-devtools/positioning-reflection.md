@@ -90,7 +90,32 @@ hate, and why?)
     we tried to use %, em, & rem (the flexible units) instead of the 
     fixed units like px & pt, but we were not really that familiar 
     with the flexible units, and how big they were really supposed 
-    to be.  But we got
+    to be.  But we got more familiar with them because of the activity.  
 
 # II. The Screenshots From "Release 3: Exercises"
-![GitHub Logo](/images/logo.png)
+###### Challenge3-4_-_Release3-1-change-color.png
+![Challenge3-4_-_Release3-1-change-color.png](imgs/Challenge3-4_-_Release3-1-change-color.png)
+
+###### Challenge3-4_-_Release3-2-column.png
+![Challenge3-4_-_Release3-2-column.png](imgs/Challenge3-4_-_Release3-2-column.png)
+
+###### Challenge3-4_-_Release3-3-rows.png
+![Challenge3-4_-_Release3-3-rows.png](imgs/Challenge3-4_-_Release3-3-rows.png)
+
+###### Challenge3-4_-_Release3-4-equidistant-5em.png
+![Challenge3-4_-_Release3-4-equidistant-5em.png](imgs/Challenge3-4_-_Release3-4-equidistant-5em.png)
+
+###### Challenge3-4_-_Release3-5-squares.png
+![Challenge3-4_-_Release3-5-squares.png](Challenge3-4_-_Release3-5-squares.png)
+
+###### Challenge3-4_-_Release3-6-footer.png
+![Challenge3-4_-_Release3-6-footer.png](imgs/Challenge3-4_-_Release3-6-footer.png)
+
+###### Challenge3-4_-_Release3-7-header.png
+![Challenge3-4_-_Release3-7-header.png](imgs/Challenge3-4_-_Release3-7-header.png)
+
+###### Challenge3-4_-_Release3-8-sidebar.png
+![Challenge3-4_-_Release3-8-sidebar.png](imgs/Challenge3-4_-_Release3-8-sidebar.png)
+
+###### Challenge3-4_-_Release3-9-get-creative.png
+![Challenge3-4_-_Release3-9-get-creative.png](imgs/Challenge3-4_-_Release3-9-get-creative.png)
