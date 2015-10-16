@@ -1,9 +1,11 @@
 [I. The Reflection](#I. The Reflection)
+
 [II. The Screenshots From "Release 3: Exercises"](#II. The Screenshots From "Release 3: Exercises")
 
 # I. The Reflection
 **_How can you use Chrome's DevTools inspector to help you 
 format or position elements?_**
+
     Chrome's DevTools inspector is very useful for formatting 
     or positioning elements, because we can use it to test 
     out what effect something will have on the selected 
@@ -26,6 +28,7 @@ format or position elements?_**
     ![Chrome Dev Tools shows wide margin](imgs/chrome-dev-tool.png)
 
 **_How can you resize elements on the DOM using CSS?_**
+
     In CSS, the size of an element on the DOM can be changed by:
         * `height` & `width` attributes (pretty self-explanatory)
         * `border` attribute = if a border is thick enough, it also 
@@ -39,6 +42,7 @@ format or position elements?_**
 **_What are the differences between Absolute, Fixed, Static, and 
 Relative positioning? Which did you find easiest to use? Which was 
 most difficult?_**
+
     * `static` = default positioning style, if no `position` 
     attribute is specified.  Element flows on the page as it 
     normally would, based on its sequence in the HTML file.  
@@ -67,6 +71,7 @@ most difficult?_**
     inside its own browser window.  
 
 **_What are the differences between Margin, Border, and Padding?_**
+
     * `margin` = distance between the child elements & text that 
     live inside an element to the edge of the element.  (Inside 
     distance.)  
@@ -78,6 +83,7 @@ most difficult?_**
 
 **_What was your impression of this challenge overall? (love, 
 hate, and why?)_**
+
     This challenge was fun because we were able to play around 
     with CSS and make the `div`s move wherever we want and shape 
     however we want.  As we worked, we found out about a lot of new 
