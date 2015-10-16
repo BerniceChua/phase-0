@@ -1,8 +1,10 @@
-[I. The Reflection](#I.TheReflection)
+[I. The Reflection](#reflection)
 
-[II. The Screenshots From "Release 3: Exercises"](#II.TheScreenshotsFromRelease3Exercises)
+[II. The Screenshots From "Release 3: Exercises"](#screenshots)
 
+<a name="reflection">
 # I. The Reflection
+</a>
 **_How can you use Chrome's DevTools inspector to help you 
 format or position elements?_**
 
@@ -100,7 +102,9 @@ fixed units like px & pt, but we were not really that familiar
 with the flexible units, and how big they were really supposed 
 to be.  But we got more familiar with them because of the activity.  
 
+<a name="screenshots">
 # II. The Screenshots From "Release 3: Exercises"
+</a>
 ###### Challenge3-4_-_Release3-1-change-color.png
 ![Challenge3-4_-_Release3-1-change-color.png](imgs/Challenge3-4_-_Release3-1-change-color.png)
 
