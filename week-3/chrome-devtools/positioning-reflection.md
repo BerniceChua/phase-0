@@ -1,6 +1,6 @@
 [I. The Reflection](#I.TheReflection)
 
-[II. The Screenshots From "Release 3: Exercises"](#II.TheScreenshotsFrom"Release3:Exercises")
+[II. The Screenshots From "Release 3: Exercises"](#II.TheScreenshotsFromRelease3Exercises)
 
 # I. The Reflection
 **_How can you use Chrome's DevTools inspector to help you 
