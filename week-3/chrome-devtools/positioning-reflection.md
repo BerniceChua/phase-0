@@ -1,6 +1,6 @@
-[I. The Reflection](# I. The Reflection)
+[I. The Reflection](#I.TheReflection)
 
-[II. The Screenshots From "Release 3: Exercises"](# II. The Screenshots From "Release 3: Exercises")
+[II. The Screenshots From "Release 3: Exercises"](#II.TheScreenshotsFrom"Release3:Exercises")
 
 # I. The Reflection
 **_How can you use Chrome's DevTools inspector to help you 
@@ -30,11 +30,10 @@ wide.  See screenshot):
 **_How can you resize elements on the DOM using CSS?_**
 
 In CSS, the size of an element on the DOM can be changed by:
-
-    * `height` & `width` attributes (pretty self-explanatory)
-    * `border` attribute = if a border is thick enough, it also 
+* `height` & `width` attributes (pretty self-explanatory)
+* `border` attribute = if a border is thick enough, it also 
     increases the size of the element.  
-    * `display` attribute = if an element has a display 
+* `display` attribute = if an element has a display 
     property of `block` or `inline-block`, it will retain 
     the shape specified by `height` & `width`.  If the 
     `display` property is set to `inline`, the size of the 
