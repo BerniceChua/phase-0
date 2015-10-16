@@ -30,6 +30,7 @@ wide.  See screenshot):
 **_How can you resize elements on the DOM using CSS?_**
 
 In CSS, the size of an element on the DOM can be changed by:
+
     * `height` & `width` attributes (pretty self-explanatory)
     * `border` attribute = if a border is thick enough, it also 
     increases the size of the element.  
