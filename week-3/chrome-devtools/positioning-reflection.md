@@ -7,7 +7,8 @@ format or position elements?_**
     Chrome's DevTools inspector is very useful for formatting 
     or positioning elements, because we can use it to test 
     out what effect something will have on the selected 
-    element directly on the browser and we can see the change instantaneously, sometimes even as easily as unchecking 
+    element directly on the browser and we can see the change 
+    instantaneously, sometimes even as easily as unchecking 
     the box of that property just to see.  
 
     It is the same as testing the appearance/formatting of 
@@ -37,7 +38,7 @@ format or position elements?_**
 
 **_What are the differences between Absolute, Fixed, Static, and 
 Relative positioning? Which did you find easiest to use? Which was 
-most difficult?
+most difficult?_**
     * `static` = default positioning style, if no `position` 
     attribute is specified.  Element flows on the page as it 
     normally would, based on its sequence in the HTML file.  
@@ -65,7 +66,7 @@ most difficult?
     it, and this `absolute` child element will behave as if it is 
     inside its own browser window.  
 
-**_What are the differences between Margin, Border, and Padding?
+**_What are the differences between Margin, Border, and Padding?_**
     * `margin` = distance between the child elements & text that 
     live inside an element to the edge of the element.  (Inside 
     distance.)  
@@ -76,14 +77,15 @@ most difficult?
     element/container that it stays in.  (Outside distance.)  
 
 **_What was your impression of this challenge overall? (love, 
-hate, and why?)
+hate, and why?)_**
     This challenge was fun because we were able to play around 
     with CSS and make the `div`s move wherever we want and shape 
     however we want.  As we worked, we found out about a lot of new 
     techniques in CSS, and we kept researching just out of 
     curiosity.  This whole thing was made easier because the Chrome 
     Dev Tools gave us instant feedback on what we were trying.  And 
-    even if not for Chrome Dev Tools, it's easy to manipulate the formatting from the IDE and see the changes almost right away.  
+    even if not for Chrome Dev Tools, it's easy to manipulate the 
+    formatting from the IDE and see the changes almost right away.  
 
     The only part that was challenging was figuring out the 
     size/numbers that we were supposed to use.  As much as possible, 
@@ -106,7 +108,7 @@ hate, and why?)
 ![Challenge3-4_-_Release3-4-equidistant-5em.png](imgs/Challenge3-4_-_Release3-4-equidistant-5em.png)
 
 ###### Challenge3-4_-_Release3-5-squares.png
-![Challenge3-4_-_Release3-5-squares.png](Challenge3-4_-_Release3-5-squares.png)
+![Challenge3-4_-_Release3-5-squares.png](imgs/Challenge3-4_-_Release3-5-squares.png)
 
 ###### Challenge3-4_-_Release3-6-footer.png
 ![Challenge3-4_-_Release3-6-footer.png](imgs/Challenge3-4_-_Release3-6-footer.png)
