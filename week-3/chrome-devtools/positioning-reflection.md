@@ -29,6 +29,11 @@ center but it's not happening, because the margin is really
 wide.  See screenshot): 
 ![Chrome Dev Tools shows wide margin](imgs/chrome-dev-tool.png)
 
+The other nice thing about Chrome Dev Tools is that if I 
+see a website with a really cool feature, and I want to 
+know how they did that, I can just open Chrome Dev Tools 
+to find out how they did it.  
+
 **_How can you resize elements on the DOM using CSS?_**
 
 In CSS, the size of an element on the DOM can be changed by:
