@@ -1,15 +1,101 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <title>GPS1.2: The Anatomy of HTML</title>
 </head>
 <body>
-    <p>Hello, I will display code here: <pre><head></pre></p>
-    <pre>
-Text in a pre element
-is displayed in a fixed-width
-font, and it preserves
-both      spaces and
-line breaks
-</pre>
+    <main>
+        <header>
+            <h1>GPS1.2: The Anatomy of HTML</h1>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+
+            <p>Welcome to HTML Anatomy 101. In this class, you will do thelearn how to dissect an HTML page from the &lt;head&gt; to the &lt;footer&gt;, add a new feature to Sublime Text, and mark up your previous blog posts with semantic HTML tags. So get your gloves on, open your textbook (the HTML docs (Links to an external site.)) and begin!</p>
+        </section>
+
+        <section>
+            <h2>Release 0: Set up</h2>
+
+            <p>Before you can get started, you'll need to get setup for the challenge. Decide who is going to drive and who will navigate. Then each of you will need to:</p>
+
+            <ul>
+                <li>Create a feature branch in the phase-0 directory</li>
+                <li>Using the command line, navigate to the week-3 directory</li>
+                <li>Within that directory, (using the command line) create a blank HTML page called dissect-me.html.</li>
+                <li>Add, commit, and push your changes to GitHub. Create a quick pull request and merge the changes. </li>
+                <li>SUBMIT your link to the dissect-me.html file as soon as you do this. This is how your guide will give you feedback. The URL should be something like: <a href="#">https://github.com/[USERNAME]/phase-0/blob/master/week-3/dissect-me.html</a></li>
+            </ul>   
+
+            <p>NOTE: You should decide whether to trade roles in each release or change roles half way through the session. If you decide to switch from release to release, you'll want to share code easily using a collaborative editor (or even a simple google doc).</p>
+        </section>
+    </main>
 </body>
 </html>
+
+<!-- 
+Reflections:
+
+What HTML5 tags have you used in this challenge and continue to return to often? Why?
+    Aside from the usual <html></html>, <head></head>, <body></body>, and 
+    <title></title>, we also used:
+        - <header></header> = the heading/header on the top of the page, I usually put 
+            content that I want to appear across all the webpages from the same website.  
+        - <main></main> = the main content of the page title of this specific web page.  
+        - <section></section> = the individual sections that have their own h1, h2, etc. 
+            titles.
+        - <footer></footer> = I usually put content that I want to appear on the bottom 
+            of all the webpages from the same website.  
+        - <h1></h1> = the most important title, the main topic.
+        - <h2></h2> = the main idea of each section.
+        - <p></p> = individual paragraphs.  
+        - <ul></ul> = "unordered list", tag where the list items <li> live inside.  This 
+            makes the list items know that I want them to have bullet points instead of 
+            numbers, because each bullet point is not in any particular order.  
+        - <ol></ol> = "ordered list", tag where the list items <li> live inside.  This 
+            makes the list items know that I want them to have some sequence, like 
+            numbers, roman numbers, or letters.  I use this when I give instructions that 
+            need to be done in that specific order.  
+        - <li></li> = an individual list item, denoted by a bullet point or a number.
+    I would also use <article>, but we didn't use it today because it was a simple webpage 
+    with only 1 main idea.  It is great for content on an index page or a landing page that 
+    lists all the news articles or blog entries, etc.
+
+    I use things like <header></header>, <main></main>, <article></article>, <section></section>, 
+    <footer></footer>, <nav></nav>, and <aside></aside> because it's semantically more readable 
+    than <div></div>, which doesn't tell us much about the intention of a webpage.  It provides a 
+    meanigful way to section content on a page.  For example, on a page about a zoo, you might have
+    different sections for information about aquatic animals, or land animals, or carnivores, etc.
+    <header> and <footer> provide a semantic way to deal with content you would place either at the head
+    or foot of the page.  Perhaps your company information and the like at the top and legal information
+    in the footer.
+    <ul>, <li>, and <p> are pretty standard HTML tags that don't seem to have semantically changed much 
+    in the framework of HTML5.
+    <nav> is a tag I find myself using a lot to differentiate navigation bar and menus from the other
+    substantive content found in the sections.  I do wonder if it makes sense to place <nav> and <aside>
+    outside of the <main>.
+
+How do elements get laid out on a page? What is the order the browser uses to display elements?
+    An html element is laid out in the page by occupying the full row/width of the page by 
+    default, except for special cases like <span></span> and <a href=""></a>.  
+    
+    The browser displays elements in the order that they are written, from top to bottom.  Most all elements 
+    in their natural or default state exist as rows that take up the full width of the page.  It is only 
+    by defining specific width and height that we can change their appearance.  And we must use some other 
+    position aside from static if we wish to move the elements around on the page.  The sort of exception 
+    to that is using display: inline or inline-block.  In that case, if the author defined width of an 
+    element(s) is such that more than one can fit across the page, the elements will appear in a row across 
+    the page.  
+
+What did you learn about Sublime in this challenge? Do you think you'll create more handy snippets at a later date?  
+    I learned that Sublime is superbly customizable!!  It's awesome and fun!!!  ^___^  
+    I want to research more tips and tricks about Sublime now!!!  :D  
+    For sure I'll create more handy snippets like these!!!  :D  Not only for html, but 
+    also for js, and rb.  
+
+What about research some shortcuts that already exist? 
+    I learned these from Will Brinkert:
+    "I have a cheat sheet with about 33 shortcuts on it that I try to remember to use all of the time.  My favorite so far is command-D.  Allows you to select multiple instances of a word and then edit all selected ones at the same time.  I also use command + / and command + option + / to comment, uncomment sections of code all of the time.  Lastly command + [ or ] is great for fixing indentation on lines or whole sections."
+-->
