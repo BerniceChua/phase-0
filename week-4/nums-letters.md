@@ -38,10 +38,10 @@ In section 2.5, Pine provides two great mini-challenges.
 > Minutes in a decade
 
 #### Hours in a year
-1 year == 365 & 1/4 days
-1 day == 24 hours
-Solution = 365.25 * 24
-```
+- 1 year == 365 & 1/4 days
+- 1 day == 24 hours
+- Solution = 365.25 * 24
+```ruby
 $ irb
 Switch to inspect mode.
 365.25 * 24
@@ -50,11 +50,11 @@ Switch to inspect mode.
 ```
 1 year has 8,766.0 hours.
 #### Minutes in a decade
-1 decade == 10 years
-From above's solution, 1 year has 8,766.0 hours.
-1 hour == 60 minutes
-Solution = 10 * 8766 * 60
-```
+- 1 decade == 10 years
+- From above's solution, 1 year has 8,766.0 hours.
+- 1 hour == 60 minutes
+- Solution = 10 * 8766 * 60
+```ruby
 $ irb
 Switch to inspect mode.
 87660 * 60
