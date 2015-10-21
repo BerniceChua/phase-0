@@ -66,3 +66,6 @@ Switch to inspect mode.
 
 # 4.2.1 Defining Variables
 * https://github.com/BerniceChua/phase-0/blob/master/week-4/defining-variables.rb
+
+# 4.2.2 Simple String Methods
+* https://github.com/[USERNAME]/phase-0/blob/master/week-4/simple-string.rb
