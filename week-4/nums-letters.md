@@ -69,3 +69,6 @@ Switch to inspect mode.
 
 # 4.2.2 Simple String Methods
 * https://github.com/BerniceChua/phase-0/blob/master/week-4/simple-string.rb
+
+# 4.2.3 Local Variables and Basic Arithmetical Expressions 
+* https://github.com/BerniceChua/phase-0/blob/master/week-4/basic-math.rb
