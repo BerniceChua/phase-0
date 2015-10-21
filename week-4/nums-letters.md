@@ -1,3 +1,5 @@
+# 4.2 Numbers, Letters, and Variable Assignment (medium)
+
 ## Release 1: Summarize
 
 ### What does puts do?
@@ -61,3 +63,6 @@ Switch to inspect mode.
 87660 * 60
 5259600
 ```
+
+# 4.2.1 Defining Variables
+* https://github.com/BerniceChua/phase-0/blob/master/week-4/defining-variables.rb
