@@ -25,3 +25,39 @@ I would say:
 > Computers don't understand decimal numbers and fractions, so all numbers are stored as "whole numbers" by default.  These are called `integer`s.  Because computers don't understand decimals, when it divides two numbers and there is supposed to be a decimal point or fraction or remainder, that part of the number does not even get recorded.  
 > In order for a computer to know that you want to keep the decimal places, the user needs to explicitly say that the calculations need to be done for the decimals.  In some programming languages, this is done by specifying that the number is a type called `float`.  In other programming languages, this can be done by explicitly putting a decimal point on at least one of the numbers in the equation.  But because computers store "decimal numbers" in a weird way, sometimes, dividing numbers of the type `float` can get funky results.  This is the same reason why sometimes decimal places give unexpected outputs in Excel.  For example, `1 / (0.5 - 0.4)` gets `10.000000000000002` instead of the expected "10" only.  To fix this, the user needs to specify how many decimal places they want as significant digits.  
 
+## Release 2: Try it!
+
+In section 2.5, Pine provides two great mini-challenges.
+
+> Mini-challenges
+
+> Using IRB or submlime, write a program that calculates and outputs the:
+
+> Hours in a year
+
+> Minutes in a decade
+
+#### Hours in a year
+1 year == 365 & 1/4 days
+1 day == 24 hours
+Solution = 365.25 * 24
+```
+$ irb
+Switch to inspect mode.
+365.25 * 24
+365.25 * 24
+8766.0
+```
+1 year has 8,766.0 hours.
+#### Minutes in a decade
+1 decade == 10 years
+From above's solution, 1 year has 8,766.0 hours.
+1 hour == 60 minutes
+Solution = 10 * 8766 * 60
+```
+$ irb
+Switch to inspect mode.
+87660 * 60
+87660 * 60
+5259600
+```
