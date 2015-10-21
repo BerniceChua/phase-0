@@ -2,10 +2,6 @@ first_name = "Bernice Anne"
 last_name = "Chua"
 age = 32
 
-p first_name
-p last_name
-p age
-
 #Solution Below
 
 
