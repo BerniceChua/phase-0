@@ -1,8 +1,8 @@
+#Solution Below
 first_name = "Bernice Anne"
 last_name = "Chua"
 age = 32
 
-#Solution Below
 
 
 
