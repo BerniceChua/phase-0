@@ -52,3 +52,12 @@ puts "You know how your favorite number can be improved?  Add 1 to it!!!  Your n
 #   it 'returns "You should move to California" if the address does not contain "CA"' do
 #     expect(welcome("nothing like cali in here")).to eq "You should move to California"
 #   end
+
+4.3.1 Return a Formatted Address
+https://github.com/BerniceChua/phase-0/blob/master/week-4/address/my_solution.rb
+
+=begin
+4.3.1 Return a Formatted Address
+https://github.com/BerniceChua/phase-0/blob/master/week-4/address/my_solution.rb
+
+=end
