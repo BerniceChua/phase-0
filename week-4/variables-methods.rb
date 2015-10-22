@@ -64,6 +64,38 @@ In the variables-methods.rb file you created, add a comment at the bottom and an
 
 1. How do you define a local variable?
 
+    Variables are names that contain some value, like a number (integer 
+    or float), a character, or a String, or a collection (enumerable or 
+    array or hash or list or dictionary) or even methods, objects, or classes.  
+
+    Syntax to assign a value to a variable:
+
+    favorite_food = "prime rib"
+    list_of_cats = ["Wong Fei-Hong", "Yin-Yeung", "Maru", "Hana", "Ohagi", "Grumpycat", "Lil-bub"]
+    dollar_to_euro_conversion = 0.9
+
+    Anything on the left side of the equal sign is the variable name.  
+    Anything on the right side of the equal sign is the assigned value.  
+    (In coding, "==" (double-equals) is for expressing equality.)  
+
+    Storing values in a variable is useful in programming, because if 
+    the value is super-long and complicated, it does not need to be 
+    re-typed again and again in each line of code that the value needs 
+    to appear in.  Not only is this less typing to make the code cleaner 
+    and more re-usable, it makes maintaining the code easier too.  For 
+    example, if a change needs to be made in the value that needs to be 
+    calculated or dealt with, the programmer won't need to hunt down 
+    every instance of that value to change it, since the only line of 
+    code that needs to be changed is the variable.  For example, the 
+    exchange rate of dollars to euros changes, and I have a bunch of 
+    calculations in my code in different places involving the exchange 
+    rate.  I already assigned the value to `dollar_to_euro_conversion`, 
+    and in the rest of the code, I put `dollar_to_euro_conversion` 
+    instead of 0.9.  So I don't need to change 0.9 in the code and 
+    possibly miss something.  I only need to re-assign the value at 
+    `dollar_to_euro_conversion` where I declared the variable earlier,
+    and the value gets changed everywhere else too.  
+
     Local variables are variables that can only be accessed inside the 
     scope or block where they live. They are written with either an 
     underscore in the beginning (example: _my_variable or __abc__) or 
@@ -72,7 +104,8 @@ In the variables-methods.rb file you created, add a comment at the bottom and an
     When an uninitialized local variable is referenced, it is interpreted 
     as a call to a method that has no arguments.  
 
-    Ruby convention is to use underscores instead of camelCase.  
+    Ruby convention is to use underscores instead of camelCase to 
+    separate words in a variable name with more than 1 word.  
 
 2. How do you define a method?
 
@@ -81,9 +114,10 @@ In the variables-methods.rb file you created, add a comment at the bottom and an
     are great ways to organize the code because if some code needed to 
     gets changed and something goes wrong, it is much easier to see 
     where something went wrong.  By assigning specific tasks to separate 
-    methods -- "separation of concerns" -- the program less redundant and your code more reusable
-
-    
+    methods -- "separation of concerns" -- the program less redundant and 
+    the code is more reusable in a single program without needing to 
+    rewrite it each time, and you can even use that method in another 
+    program.
 
     To create a method, these are the important syntax to have in a 
     .rb file:
@@ -92,19 +126,31 @@ In the variables-methods.rb file you created, add a comment at the bottom and an
         # Code lives here!
     end
 
-    There's another version where the method accepts arguments:
-    def method_name(arg1, arg2, etc.)
-        # Do something!
+    There's another version where the method accepts a specific 
+    number of arguments:
+    
+    def method_name(arg1, arg2, arg3)
+        # Code lives here!
     end
 
     If you want the user to put as little or as many arguments:
-    def method_name
-        # Do something!
+    
+    def method_name(*args)
+        # Code lives here!
     end
 
 3. What is the difference between a local variable and a method?
 
-    A local variable is 
+    A local variable is can only be accessed inside the scope or 
+    block where it lives.  A method can be accessed even outside 
+    the .rb file where it lives, as long as some code is written 
+    somewhere else to import the method from the external file.  
+
+    A local variable is what something is called, and a methods 
+    is what an object can do (as long as it exists for that object).  
+
+    A method can contain one or more local variables.  But a local
+    variable can only be assigned one method at a time.  
 
 4. How do you run a ruby program from the command line?
 
