@@ -20,6 +20,14 @@ Pseudocode
 
 # Your Solution Below
 
+# initial solution
 def array_concat(array_1, array_2)
   # Your code here
+    array_1 + array_2  # trying out implicit return
+end
+
+# solution with built-in method
+def array_concat(array_1, array_2)
+  # Your code here
+    array_1.concat(array_2)  # trying out implicit return
 end
