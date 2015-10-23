@@ -22,12 +22,28 @@ Pseudocode
 
 # initial solution
 def array_concat(array_1, array_2)
-  # Your code here
+    # Your code here
     array_1 + array_2  # trying out implicit return
 end
 
 # solution with built-in method
 def array_concat(array_1, array_2)
-  # Your code here
+    # Your code here
     array_1.concat(array_2)  # trying out implicit return
+end
+
+# long version, just for the sake of being complete
+def array_concat(array_1, array_2)
+    # Your code here
+    combined_array = []
+
+    array_1.each { |i| 
+        combined_array.push(i)
+    }
+
+    array_2.each do |j| 
+        combined_array.push(j)
+    end
+
+    return combined_array
 end
