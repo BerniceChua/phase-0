@@ -6,10 +6,16 @@
 # Your Solution Below
 
 # my_info is empty to start.  Edit this!
-my_info = {}
+my_info = {
+  :first_name => "Bernice Anne", 
+  :last_name => "Chua", 
+  :hometown => "San Francisco", 
+  :age => 32
+}
 
-
-
+# To access the value of each key:
+puts "My name is #{my_info[:first_name]} #{my_info[:last_name]}.  I live in #{my_info[:hometown]}."
+puts my_info[:age]
 
 
 # RSpec Tests. They are included in this file because the local variables you are creating are not accessible across files. If we try to run these files as a separate file per normal operation, the local variable checks will return nil.
