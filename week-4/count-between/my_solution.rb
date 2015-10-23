@@ -25,7 +25,8 @@ Pseudocode
 
     Step 1: get user inputs (array of numbers, the lower bound, and the upper bound).
     Step 2: check if inputs are valid.
-    Step 2.1 if no array or upper bound is smaller than lower bound, return Zero.
+    Step 2.1 if there is no array or the upper bound is smaller than the lower 
+        bound, return Zero.
     Step 3: make a variable to hold total count of "numbers_between".
     Step 3.1: set "numbers_between" equal to 0 (Zero).
     Step 4: FOR EACH number in the array: check if the number satisfies these conditions:
