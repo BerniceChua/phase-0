@@ -12,8 +12,8 @@
 
 =begin
 Pseudocode
-    Input = array of integers
-    Output = shortest integer
+    Input = array of Strings (called words)
+    Output = shortest word
 
     Step 1: get user input (array of Strings, called "list_of_words").
     Step 2: make a variable to hold results -- "shortest".
