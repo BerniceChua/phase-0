@@ -1,6 +1,6 @@
 # Longest String
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself; because this is a solo challenge].
 
 # longest_string is a method that takes an array of strings as its input
 # and returns the longest string
@@ -22,7 +22,7 @@ Pseudocode
         word in the array.  
     Step 4.1: IF the next word is longer than the word in "longest", 
         replace "longest" with the next word.
-    Step 4: return the result of longest.
+    Step 5: return the result of longest.
 =end
 
 

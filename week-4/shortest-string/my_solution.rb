@@ -22,7 +22,7 @@ Pseudocode
         word in the array.  
     Step 4.1: IF the next word is shorter than the word in "shortest", 
         replace "shortest" with the next word.
-    Step 4: return the result of shortest.
+    Step 5: return the result of shortest.
 =end
 
 

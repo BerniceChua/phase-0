@@ -22,7 +22,7 @@ Pseudocode
         number in the array.  
     Step 4.1: IF the next number is larger than the number in "largest", 
         replace "largest" with the next number.
-    Step 4: return the result of largest.
+    Step 5: return the result of largest.
 =end
 
 

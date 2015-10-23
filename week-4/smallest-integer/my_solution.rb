@@ -22,7 +22,7 @@ Pseudocode
         number in the array.  
     Step 4.1: IF the next number is smaller than the number in "smallest", 
         replace "smallest" with the next number.
-    Step 4: return the result of smallest.
+    Step 5: return the result of smallest.
 =end
 
 
