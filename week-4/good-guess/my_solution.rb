@@ -24,7 +24,19 @@ def good_guess?(number_answer)
     end
 end
 
+# initial solution
+def good_guess?(number_answer)
+    return true if number_answer == 42
+        
+    return false
+end
+
 # refactored solution
-# def good_guess?(number_answer)
-#     true if number_answer == 42 else false
-# end
+def good_guess?(number_answer)
+    if number_answer == 42 then true else false end
+end
+
+# refactored solution
+def good_guess?(number_answer)
+    number_answer == 42 ? true : false
+end
