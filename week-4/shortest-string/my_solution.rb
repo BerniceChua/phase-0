@@ -26,7 +26,7 @@ Pseudocode
 =end
 
 
-#Your Solution Below
+# Your Solution Below
 # initial solution
 def shortest_string(list_of_words)
   # Your code goes here!
