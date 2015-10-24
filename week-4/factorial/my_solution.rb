@@ -1,15 +1,7 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [with: Syema Ailia (driver), me = navigator].
 
-
-# Your Solution Below
-def factorial(number)
-  # Your code goes here
-end
-# Factorial
-
-# I worked on this challenge [by myself, with: Bernice].
 =begin
 
 input: a non negative integer
@@ -26,19 +18,20 @@ Return result
 
 =end
 
-
-
 # Your Solution Below
+# initial solution
 def factorial(number)
-  if number == 0
-    return 1
-  end
-  result = number
-  for next_number in (1..number)
-    result *= next_number
+    # Your code goes here
+    if number == 0
+        return 1
+    end
 
-    #longhand
-    #result = result * next_number
-  end
-  return result
+    result = number
+    for next_number in 2...number
+        result *= next_number
+        #longhand
+        #result = result * next_number
+    end
+
+    return result
 end
