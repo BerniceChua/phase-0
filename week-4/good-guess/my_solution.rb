@@ -3,6 +3,8 @@
 # I worked on this challenge [by myself, because the description said "(not as good for pairing)"].
 
 =begin
+Pseudocode
+
 Inputs = an integer value (I'll call it 'number_answer')
 Output = a boolean (true if answer matches 42, false if not)
 
