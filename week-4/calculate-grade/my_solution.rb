@@ -35,19 +35,48 @@ Step 3: return output
 
 def get_grade(average)
     if average <= 100 && average >= 90
-        p "A"
+        return "A"
     elsif average < 90 && average >= 80
-        p "B"
+        return "B"
     elsif average < 80 && average >= 70
-        p "C"
+        return "C"
     elsif average < 70 && average >= 60
-        p "D"
+        return "D"
     else average < 60
-        p "F"
+        return "F"
     end
 end
 
-# get_grade(95)
-# get_grade(85)
-# get_grade(70)
-# get_grade(10)
+
+# initial solution
+
+def get_grade(average)
+    return "A" if average <= 100 && average >= 90
+        
+    return "B" if average < 90 && average >= 80
+        
+    return "C" if average < 80 && average >= 70
+        
+    return "D" if average < 70 && average >= 60
+        
+    return "F" if average < 60
+end
+
+
+# refactored solution
+
+def get_grade(average)
+    case average
+
+    when 90..100
+        return "A"
+    when 80...90
+        return "B"
+    when 70...80
+        return "C"
+    when 60...70
+        return "D"
+    else average < 60
+        return "F"
+    end
+end
