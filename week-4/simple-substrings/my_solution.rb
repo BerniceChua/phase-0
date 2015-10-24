@@ -1,12 +1,12 @@
 # Simple Substrings
 
-# I worked on this challenge [by myself, with: Aleksandra Nowak].
+# I worked on this challenge [with: Aleksandra Nowak (navigator), me=driver].
 
 
 # Your Solution Below
 =begin
 
-pseudo code
+Pseudo code
 
 input = address (string of characters)
 output = string of characters that changes based on answer in "address"
@@ -22,43 +22,38 @@ ELSE output = "You should move to California"
 
 =end
 
+
+# initial solution
+
 def welcome(address)
+    # Your code goes here!
     split_words = address.split(" ")
-    $count = 0
 
-    until $count = split_words.len  
-
-p is_a?(has_ca)
-    if has_ca == true
-        p "Welcome to California"
-    else
-        p "You should move to California"
+    for word in split_words
+        if word == "CA"
+            return "Welcome to California"
+        end
     end
+
+    return "You should move to California"
 end
 
-welcome("blah hello blah")
 
-welcome("633 Folsom Street, 6th Floor, San Francisco, CA 94103")
-
-welcome("calina kokocakoko kokoCAko CACA ca")
-
-welcome("a string with CA in it")
-
+# refactored solution
 
 def welcome(address)
-    
-
-     if address.include? "CA"
+    if address.include? "CA"
         p "Welcome to California"
     else
         p "You should move to California"
     end
 end
 
-welcome("blah hello blah")
 
-welcome("633 Folsom Street, 6th Floor, San Francisco, CA 94103")
+# refactored solution
 
-welcome("calina kokocakoko kokoCAko CACA ca")
-
-welcome("a string with CA in it")
+def welcome(address)
+    return "Welcome to California" if address.include? "CA"
+        
+    return "You should move to California"
+end
