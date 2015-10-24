@@ -35,3 +35,10 @@ def factorial(number)
 
     return result
 end
+
+# refactored solution
+def factorial(number)
+    return 1 if number == 0 || number == 1
+
+    return (2..number).to_a.reduce(:*)
+end
