@@ -17,8 +17,9 @@ Step 3: return output
 
 # Your Solution Below
 
-# initial solution
+
 def good_guess?(number_answer)
+    # Your code goes here!
     if number_answer == 42
         return true
     else
@@ -26,7 +27,7 @@ def good_guess?(number_answer)
     end
 end
 
-# initial solution
+# refactored solution
 def good_guess?(number_answer)
     return true if number_answer == 42
         
