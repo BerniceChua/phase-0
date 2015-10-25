@@ -49,7 +49,7 @@ def get_grade(average)
 end
 
 
-# initial solution
+# refactored solution
 
 def get_grade(average)
     return "A" if average <= 100 && average >= 90

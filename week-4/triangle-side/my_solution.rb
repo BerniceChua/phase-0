@@ -1,4 +1,4 @@
-# I worked on this challenge [with: Sasha Tailor].
+# I worked on this challenge [with: Sasha Tailor (navigator) ].
 
 
 # Your Solution Below
