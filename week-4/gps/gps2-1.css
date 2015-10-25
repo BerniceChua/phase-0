@@ -12,7 +12,8 @@ a:hover {
 }
 
 a:visited {
-    
+    font-style: underline;
+    font-color: brown;
 }
 
 
