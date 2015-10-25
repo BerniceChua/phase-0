@@ -1,5 +1,7 @@
-# I worked on this challenge [with: Sasha Tailor (navigator) ].
+# Valid lengths for sides of a triangle.
 
+# I worked on this challenge [with: Sasha Tailor (navigator), me=driver].
+# I worked on this challenge again [with: Natalie Polen (driver), me=navigator].
 
 # Your Solution Below
 
@@ -36,6 +38,8 @@ def valid_triangle?(a, b, c)
   if (a + b >= c) && (a + c >= b) && (c + b >= a)
     return true
   end
+
+  return false
 end
 
 
@@ -47,4 +51,6 @@ def valid_triangle?(a, b, c)
 
   # Check that sum of two sides is greater than third side for all permutations
   return true if (a + b >= c) && (a + c >= b) && (c + b >= a)
+  
+  return false
 end

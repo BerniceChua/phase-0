@@ -1,6 +1,7 @@
 # Calculate a Grade
 
 # I worked on this challenge [with: Aleksandra Nowak (driver), me=navigator].
+# I worked on this challenge again [with: Natalie Polen (driver), me=navigator].
 
 =begin
 Pseudocode
