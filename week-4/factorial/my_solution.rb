@@ -13,6 +13,9 @@ Step 2
 if input is 0 return 1
 Step 3
 if the number is not yet equal to 1, subtract 1 from itself and multiply itself with this result
+ but the opposite also works:
+   multiplying 1 * 2 * ... * input_number is the same as
+   multiplying input_number * (input_number - 1) * ... * 2 * 1
 Step 4
 Return result
 
