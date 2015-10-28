@@ -46,8 +46,8 @@ In section 2.5, Pine provides two great mini-challenges.
 ```ruby
 $ irb
 Switch to inspect mode.
-365.25 * 24
-365.25 * 24
+hours_in_a_year = 365.25 * 24
+hours_in_a_year = 365.25 * 24
 8766.0
 ```
 1 year has 8,766.0 hours.
@@ -59,9 +59,9 @@ Switch to inspect mode.
 ```ruby
 $ irb
 Switch to inspect mode.
-87660 * 60
-87660 * 60
-5259600
+minutes_in_a_decade = hours_in_a_year * 600
+minutes_in_a_decade = hours_in_a_year * 600
+5259600.0
 ```
 
 # 4.2.1 Defining Variables
