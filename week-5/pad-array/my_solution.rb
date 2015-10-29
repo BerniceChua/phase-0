@@ -50,15 +50,70 @@ Step 3.2
 # 1. Initial Solution
 def pad!(array, min_size, value = nil) #destructive
   # Your code here
+  if min_size <= array.length
+    return array
+  else
+    padding = array.length - min_size
+
+    counter = array.length
+    while counter < min_size
+        array << value
+        
+        counter += 1
+    end
+
+    return array
+  end
+
 end
 
 def pad(array, min_size, value = nil) #non-destructive
   # Your code here
+  copy = []
+  
+  array.each do |variable|
+      copy << variable
+  end
+
+  if min_size <= array.length
+    return copy
+  else
+    padding = array.length - min_size
+
+    counter = array.length
+    while counter < min_size
+        copy << value
+        
+        counter += 1
+    end
+
+    return copy
+  end
 end
 
+pad([3, 2, 1, 5], 4)
 
 # 3. Refactored Solution
 
+def pad!(array, min_size, value = nil) #destructive
+    return array if min_size <= array.length
+        
+    padding = array.length - min_size
 
+    pads = []
+
+
+    array.concat()
+end
+
+def pad(array, min_size, value = nil) #non-destructive
+  copy = []
+  copy = copy + array
+
+  return copy if min_size <= array.length
+
+  
+
+end
 
 # 4. Reflection
