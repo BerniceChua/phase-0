@@ -72,39 +72,50 @@ end
 
 
 # Alternate
-# def separate_comma(number)
-#     number_array = number.to_s.split("").reverse
-#     commaized = []
 
-#     current_digit = 0
-#     while current_digit < number_array.length
-#         commaized.unshift(reversed_array[current_digit])
+def separate_comma(number)
+    number_array = number.to_s.split("")
+    commaized = []
 
-#         if ((current_digit + 1) % 3 == 0) && (reversed_array[current_digit + 1] != nil)
-#             commaized.unshift(",")
-#         end
+    current_digit = number_array.length - 1
+    counter = 1
+    while current_digit >= 0
+        commaized.unshift(number_array[current_digit])
 
-#         current_digit += 1
-#     end
+        if ((counter) % 3 == 0) && (current_digit - 1 >= 0)
+            commaized.unshift(",")
+        end
 
-#     return commaized.join
-# end
+        counter += 1
+        current_digit -= 1
+    end
 
-p separate_comma(1000)
-p
-p separate_comma(12345)
-# p
-# p separate_comma(123456)
-# p
-# p separate_comma(1234567)
-# p
-# p separate_comma(12345678)
-# p
-# p separate_comma(123456789)
+    return commaized.join
+end
+
 
 # 2. Refactored Solution
 
+def separate_comma(number)
+    number_array = number.to_s.split("")
+    commaized = []
 
+    while number_array.length != 0
+        commaized.unshift(number_array.pop(3))
+
+        if (number_array.length != 0)
+            commaized.unshift(",")
+        end
+    end
+
+    return commaized.join
+end
 
 
 # 3. Reflection
+
+=begin
+
+
+   
+=end
