@@ -1,5 +1,9 @@
 # gps2_2.rb
 
+# I worked on this challenge [with: Gregory Wehmeier]
+
+# I spent [] hours on this challenge.
+
 # Release 1
 =begin
 
