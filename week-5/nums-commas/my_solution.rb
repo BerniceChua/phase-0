@@ -27,7 +27,7 @@ Step 3: Transform integer into commaized version of input.
     Step 3.1: Split the String into individual digits (characters).
         How?
         Step 3.1.a: Convert "number" into a String.
-        Step 3.2.b: Split this String-ified "number" into an Array.        
+        Step 3.2.b: Split this String-ified "number" into an Array.
     Step 3.2: Starting at the end of the individual characters,
                 FOR each set of 3 digits copy those digits and put a comma,
                 UNTIL no more digits are left.
