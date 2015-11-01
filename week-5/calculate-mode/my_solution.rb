@@ -36,7 +36,7 @@ Step 5: return the key with the highest value
 # 1. Initial Solution
 
 def mode(input_array)
-    output_mode = nil
+    output_mode = []
     mode_hash = {}
 
     input_array.each { |variable|
@@ -91,7 +91,6 @@ end
 # 3. Refactored Solution
 
 def mode(input_array)
-    output_mode = nil
     mode_hash = {}
 
     input_array.each { |variable|
@@ -103,6 +102,20 @@ def mode(input_array)
     mode_hash.select{ |k,v| v == mode_hash.values.sort[-1] }.keys
 end
 
+
+# re-refactored solution
+
+def mode(input_array)
+    mode_hash = {}
+
+    input_array.each { |variable|
+        mode_hash[variable] = 1 if !mode_hash.has_key?(variable)
+
+        mode_hash[variable] += 1
+    }
+
+    mode_hash.select{ |k,v| v == mode_hash.values.sort[-1] }.keys
+end
 
 # 4. Reflection
 
