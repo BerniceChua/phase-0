@@ -121,20 +121,24 @@ On your own, create a commented section in your "my_solution.rb" file and write 
 
     We chose to do it this way, because: 
 
-    a) The alternative of using an array would have been messier and would 
-    have involved lots of nested for-loops.  
+        a) The alternative of using an array would have been messier and would 
+        have involved lots of nested for-loops.  
 
-    If we were to do this array-style, then it would look like this:
-    mode_array = [[unique_element_1, 5], [unique_element_2, 2], [unique_element_3, 4], ...]
+        If we were to do this array-style, then it would look like this:
+        mode_array = [[unique_element_1, 5], [unique_element_2, 2], [unique_element_3, 4], ...]
 
-    (wherein the inside arrays represented each element; element zero of the inside 
-    arrays were the unique elements, and element 1 of the inside arrays were the 
-    number of times those unique elements were encountered.)
+        (wherein the inside arrays represented each element; element zero of the 
+        inside arrays were the unique elements, and element 1 of the inside 
+        arrays were the number of times those unique elements were encountered.)
 
-    b) As seen from the example above, if we used an array and we needed to 
-    add 1 to unique_element_4, then the array would need to have been called 
-    and iterated until we reached `mode_array[3][1]`.  That's inefficient, 
-    computationally-expensive, and prone to errors.  
+        b) As seen from the example above, if we used an array and we needed to 
+        add 1 to unique_element_4, then the array would need to have been called 
+        and iterated until we reached `mode_array[3][1]`.  That's inefficient, 
+        computationally-expensive, and prone to errors.  
+
+    With a hash, it is easier to change the data, because we don't have to 
+    do either of the above.  We just need to find the key, so we can change 
+    the value associated with it.  
 
 2. Were you more successful breaking this problem down into implementable 
 pseudocode than the last with a pair?  
