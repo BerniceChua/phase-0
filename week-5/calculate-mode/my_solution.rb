@@ -2,7 +2,7 @@
 
 # I worked on this challenge [with: Trevor Newcomb (navigator), Bernice = driver]
 
-# I spent 2 hours on this challenge.
+# I spent 2.5 hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -47,8 +47,6 @@ def mode(input_array)
         end
     }
 
-    p mode_hash.values
-
     output_mode = mode_hash.values.sort
 
     result = mode_hash.select { |k,v| 
@@ -57,7 +55,7 @@ def mode(input_array)
 
     return result.keys
 end
-p mode([1, 5, 5, 5, 2, 6, 6])
+
 
 # alternate solution (iterative)
 
