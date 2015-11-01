@@ -1,8 +1,8 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [with: Trevor Newcomb (navigator)]
+# I worked on this challenge [with: Trevor Newcomb (navigator), Bernice = driver]
 
-# I spent [] hours on this challenge.
+# I spent 2 hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -32,19 +32,51 @@ Step 5: return the key with the highest value
 
 =end
 
+
 # 1. Initial Solution
 
 def mode(input_array)
-    output_mode = nil
+    output_mode = []
     mode_hash = {}
 
-    input_array.each do |variable|
+    for variable in input_array
         if mode_hash.has_key?(variable)
             mode_hash[variable] += 1
         else
             mode_hash[variable] = 1
         end
     end
+
+    biggest_number = 0
+    mode_hash.each { |key, value|
+        if value > biggest_number
+            biggest_number = value
+        end
+    }
+
+    mode_hash.each { |thing, blah| 
+        if blah == biggest_number
+            output_mode << thing
+        end
+    }
+
+    output_mode
+end
+
+
+# 3. Refactored Solution
+
+def mode(input_array)
+    output_mode = nil
+    mode_hash = {}
+
+    input_array.each { |variable|
+        if mode_hash.has_key?(variable)
+            mode_hash[variable] += 1
+        else
+            mode_hash[variable] = 1
+        end
+    }
 
     output_mode = mode_hash.values.sort
 
@@ -55,14 +87,6 @@ def mode(input_array)
     return result.keys
 end
 
-# 3. Refactored Solution
-
-people = {
-  :fred => 23,
-  :joan => 18,
-  :pete => 54
-}
-people.sort_by { |name, age| age }
-  # => [[:joan, 18], [:fred, 23], [:pete, 54]]
 
 # 4. Reflection
+
