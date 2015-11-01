@@ -2,6 +2,12 @@
 
 # I worked on this challenge [with: Gregory Wehmeier]
 
+=begin
+GPS 2.2 on Oct. 29, Thursday, 3pm to 4pm Pacific Time.
+Guide was Lorena Mesa.  
+Paired with Gregory Wehmeier.
+=end
+
 # I spent 2 hours on this challenge.
 
 # Release 1
