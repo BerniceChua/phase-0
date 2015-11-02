@@ -122,6 +122,8 @@ end
 p create_accountability_groups_hash_version(random_names_list)
 p create_accountability_groups_array_version(random_names_list)
 
+
+
 # 2. Refactored Solution
 
 def name_randomizer(array_of_names)
@@ -289,12 +291,34 @@ answer the following questions in:
 
 1. What was the most interesting and most difficult part of this challenge?
 
+    Not really difficult, just stuff that I'm not used to yet so it took me 
+    along time to figure it out.  
+
+    I learned more about the random number generator today.  In the iterative 
+    version of the code, at first, I thought of putting it outside the while 
+    loop, but that does not work, because it's the same random number, since 
+    it's a number and not a series of numbers.  Because of this mistake, only 
+    one name got put into ALL of the output LOL!!  
+
+    This got fixed when I put the 
+    "index_picker = pseudo_random.rand(0...array_of_names.length)"
+    INSIDE the while loop.
+
+    My main difficulty now is refactoring, because I think that I cannot 
+    reduce the code even further without sacrificing readability, or without 
+    breaking anything.  
 
 2. Do you feel you are improving in your ability to write pseudocode and break 
 the problem down?
 
+    Yes, I feel that my ability to write pseudocode and break the problem down 
+    has gotten better.  
+
 3. Was your approach for automating this task a good solution? What could have 
 made it even better?
+
+    At this point, I'm not sure what could make the code better because I am 
+    still a n00b, but I'm sure that it COULD be better when I learn more.  
 
 4. What data structure did you decide to store the accountability groups in 
 and why?
@@ -325,6 +349,8 @@ and why?
 5. What did you learn in the process of refactoring your initial solution? Did 
 you learn any new Ruby methods?
 
-    I learned about .shuffle when I refactored my initial solution. ^_^
+    I newly learned about .shuffle when I refactored my initial solution. ^_^
+
+    It's pretty cool, because all those lines of code got reduced into 1 line.
 
 =end
