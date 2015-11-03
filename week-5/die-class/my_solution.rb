@@ -1,40 +1,105 @@
 # Die Class 1: Numeric
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge [by myself, because it is a solo challenge]
 
 # I spent [] hours on this challenge.
 
+
 # 0. Pseudocode
 
-# Input:
-# Output:
+=begin
+
+# Input: 
+    number of sides of your dice
+
+# Output: 
+- rolling the dice (.roll method) gets a random number between 1 and the 
+    total number of sides of the dice (inclusive)
+- getting the number of sides (.sides method) returns the total number of 
+    sides on your dice.
+
 # Steps:
+
+Step 1: 
+    Get the total number of sides from the user.
+Step 2: 
+    IF the total number of sides is LESS than 1, give an error message, called 
+    "ArgumentError"
+Step 3: 
+    When the user asks for the number of sides of the dice, the dice will give 
+    the number of sides.
+Step 4:
+    When the user rolls the dice, the dice will give a randomly selected 
+    number between 1 and the total number of sides of the dice (inclusive).
+
+=end
 
 
 # 1. Initial Solution
 
 class Die
+  @@min_number_of_sides = 1
+
   def initialize(sides)
     # code goes here
+    if sides < @@min_number_of_sides
+        raise ArgumentError
+    end
+
+    @sides = sides
   end
 
   def sides
     # code goes here
+    @sides
   end
 
   def roll
     # code goes here
+    pseudo_random = Random.new
+
+    pseudo_random.rand(1..sides)
   end
 end
 
 
-
 # 3. Refactored Solution
+=begin
+Not really "refactored", because cannot do that without adding 
+more unnecessary code.  
+But the code is more corrected according to good coding 
+standards in Ruby.
+=end
 
+class Die
+  @@min_number_of_sides = 1
 
+  def initialize(sides)
+    # code goes here
+    @sides = sides
 
+    check_minimum_number_of_sides
+  end
 
+  def sides
+    # code goes here
+    @sides
+  end
 
+  def roll
+    # code goes here
+    pseudo_random = Random.new
+
+    pseudo_random.rand(1..sides)
+  end
+
+  private
+
+  def check_minimum_number_of_sides
+    raise ArgumentError if sides < @@min_number_of_sides
+  end
+
+end
 
 
 # 4. Reflection
