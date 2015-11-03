@@ -2,8 +2,6 @@
 
 # I worked on this challenge [by myself, because it is a solo challenge]
 
-# I spent [] hours on this challenge.
-
 
 # 0. Pseudocode
 
