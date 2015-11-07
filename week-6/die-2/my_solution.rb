@@ -72,7 +72,7 @@ end
 
 class Die
   def initialize(labels)
-    raise ArgumentError if labels == [] || labels.nil?
+    raise ArgumentError if labels.empty? || labels.nil?
 
     @labels = labels
   end
