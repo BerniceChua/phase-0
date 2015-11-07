@@ -192,12 +192,41 @@ end
 # p new_game_plus.guess(10)
 # p new_game_plus.solved?
 
+
+# Alternate Refactored Solution
+
+class GuessingGame
+  def initialize(answer)
+    # Your initialization code goes here
+    @answer = answer
+    @guess = false
+  end
+
+  # Make sure you define the other required methods, too
+  def guess(your_guess)
+    if your_guess > @answer
+      @guess = :high
+    elsif your_guess < @answer
+      @guess = :low
+    else
+      @guess = :correct
+    end
+  end
+
+  def solved?
+    @guess == :correct ? true : false
+  end
+end
+
+
 =begin
 
     The refactored versions don't look that much different from the 
     original, because at this skill level, I yet don't know how to 
     shorten or change the code to be more efficient without 
     sacrificing readability, or without breaking the code.  
+    (I actualy don't like ternary operators for the reason of 
+    it reducing readability.)  
 
 =end
 
@@ -260,6 +289,10 @@ benefits of using symbols?
           internal symbol table to represent new variables made the 
           usual way.  But using a symbol, the code can bypass this 
           "lookup" step.  
+      4. Ruby will create an (almost) unlimited number of string 
+          instances for all your hash keys, but will only keep one 
+          copy of a symbol in memory at a time. This can really save 
+          memory for your programs in the long run.
 
     I think this is the reason why this code requires the returns to be symbols.  
     It's not only because it's efficient for Ruby to look them up, but using 
