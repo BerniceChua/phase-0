@@ -1,8 +1,8 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [with: Luis Fernando Plaz].
-#
+# I worked on this challenge [with: Luis Fernando Plaz (navigator)].
+# [Saturday, Nov. 7, 2pm Eastern / 11am Pacific]
 # I spent [#] hours on this challenge.
 
 # Pseudocode
