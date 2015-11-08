@@ -5,6 +5,24 @@
 # I spent [#] hours on this challenge.
 
 # Release 5: Apply
+=begin
+Pseudocode:
+    NameData class:
+        1. It will get the user's name. (taken cared of in "initialize")
+        2. It will be able to return the user's name.
+        3. It will be able to change the user's name.
+        (2. and 3. can be taken care of with "attr_accessor")
+
+    Greetings class:
+        INITIALIZE:
+            When a new "Greeting" is created, it will get 
+                the name of the person to greet.
+                Where is it getting the name of the person from?  
+                    It is from another class called "NameData"
+        IF #hello method is called:
+            It will put out a greeting with the name of the person.  
+=end
+
 class NameData
   attr_accessor :name
 
