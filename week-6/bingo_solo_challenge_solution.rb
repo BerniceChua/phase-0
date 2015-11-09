@@ -58,7 +58,9 @@
            space them at the center of their own columns
 =end
 
+
 # Initial Solution
+
 class BingoBoard
   attr_accessor :bingo_board
   # attr_reader :call_new_bingo_number
@@ -86,6 +88,7 @@ class BingoBoard
     @bingo_board.each_index { |row| 
       chosen_column << @bingo_board[row][@chosen_letter_column]
     }
+    puts "Column #{get_letter(@chosen_letter_column)} has: #{chosen_column}"
 
     chosen_column
   end
@@ -94,15 +97,15 @@ class BingoBoard
     show_column.each_with_index { |item, index|
       if item == @randomly_chosen_number
         @bingo_board[index][@chosen_letter_column] = "X"
-        return true
+        @found_match = true
       else
-        return false
+        @found_match = false
       end
     }
   end
 
   def confirm_match
-    if find_match == true
+    if @found_match == true
       p "Bingo! (#{show_bingo_number} was changed into 'X'.)"
     else 
       p "Try again."
@@ -155,36 +158,97 @@ end
 
 
 # Refactored Solution
-# We will randomly generate a board for you!!
 
-# class BingoBoard
+class BingoBoard
+  attr_accessor :bingo_board
 
-#   def initialize(board)
-#     @bingo_board = board
-#   end
+  def initialize(board)
+    @bingo_board = board
+  end
 
-#   def display_board
-#     line_width = 15
+  def call_new_bingo_number
+    @randomly_chosen_number = randomizer(1, 101)
+    @chosen_letter_column = randomizer(0, @bingo_board.length)
 
-#     formatted_display = "Item".ljust(line_width) + "Quantity\n\n"
-#     list_name.each do |key, value|
-#       # called string interpolation " #{var_name} " :-)
-#       formatted_display += "#{key}:".ljust(line_width) + " #{value}\n"
-#     end
-#     formatted_display
-#   end
+    [get_letter(@chosen_letter_column), @randomly_chosen_number]
+  end
 
-#   def generate_board
-#     # bingo_board = 
-#   end
+  def show_bingo_number
+    "#{get_letter(@chosen_letter_column)} #{@randomly_chosen_number}"
+  end
 
-#   private
+  def show_column
+    chosen_column = []
 
-#   def bingo_randomizer
-#     Random.new.rand(1..100)
-#   end
+    @bingo_board.each_index { |row| 
+      chosen_column << @bingo_board[row][@chosen_letter_column]
+    }
+    puts "Column #{get_letter(@chosen_letter_column)} has: #{chosen_column}"
 
-# end
+    chosen_column
+  end
+
+  def find_match
+    if show_column.include?(@randomly_chosen_number)
+      row_number = show_column.index(@randomly_chosen_number)
+      @bingo_board[row_number][@chosen_letter_column] = "X"
+      @found_match = true
+    else
+      @found_match = false
+    end
+  end
+
+  def confirm_match
+    if @found_match
+      p "Bingo! (#{show_bingo_number} was changed into 'X'.)"
+    else 
+      p "Try again."
+    end
+  end
+
+  def display_board
+    line_width = 5
+    title = ""
+    formatted_display = ""
+
+    %W(B I N G O).each { |letter| title += letter.center(line_width) }
+    
+    @bingo_board.each_index { |row|
+      @bingo_board[row].each { |number| 
+        formatted_display += number.to_s.center(line_width)
+      }
+      formatted_display += "\n"
+    }
+    
+    puts title + "\n" + formatted_display
+  end
+
+
+  private  # helper methods
+
+  def randomizer(start_number, end_number)
+    Random.new.rand(start_number...end_number)
+  end
+
+  def get_letter(picked_number)
+    case picked_number
+
+    when 0
+      return "B"
+    when 1
+      return "I"
+    when 2
+      return "N"
+    when 3
+      return "G"
+    when 4
+      return "O"
+    else
+      raise ArgumentError.new("Invalid Bingo Letter.  Please try again.")
+    end
+  end
+
+end
 
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
@@ -196,11 +260,6 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 
-# p new_game.show_column("B")
-# p new_game.show_column("N")
-
-# p new_game.random
-
 p new_game.display_board
 new_game.call_new_bingo_number
 p new_game.show_bingo_number
@@ -209,30 +268,6 @@ p new_game.find_match
 p new_game.confirm_match
 p new_game.show_column
 p new_game.display_board
-
-=begin
-
-board = [[47, 44, 71, 8, 88],
-        [22, 69, 75, 65, 73],
-        [83, 85, 97, 89, 57],
-        [25, 31, 96, 68, 51],
-        [75, 70, 54, 80, 83]]
-
-# p board.each_index { |row| p row}
-
-line_width = 5
-    title = ""
-    formatted_display = ""
-
-    %W(B I N G O).each { |letter| title += letter.center(line_width) }
-    
-    # board.each_index { |row|
-    #   board[row].each { |number| formatted_display += number.center(line_width)}
-    # }
-    
-    title + "\n" + formatted_display
-
-=end
 
 
 
@@ -272,13 +307,28 @@ pseudocoding style?
 
 4. What methods did you use to access and modify the array?
 
-    fdfd
+    Original: used ".each_with_index" to iterate through the array to find 
+    the value that matched what needed to be X-ed, AND its index number.  If the 
+    value matched what we are looking for, I got its index number.  
+    Needed the index number because it will be used to modify that element 
+    using the "nested data structures" technique of chaining square brackets 
+    to reach the elements of a sub-array.  
+
+    Refactored: used ".include?" to check if that value exists.  
+    Used ".index(my_element)" to get its index number.  
+    Needed the index number because it will be used to modify that element 
+    using the "nested data structures" technique of chaining square brackets 
+    to reach the elements of a sub-array.  
 
 5. Give an example of a new method you learned while reviewing the Ruby 
 docs. Based on what you see in the docs, what purpose does it serve, and 
 how is it called?
 
-    fdfd
+    .include?(my_chosen_element)
+        Checks if the array contains your chosen element.
+
+    .index(my_chosen_element)
+        Gets the index of where your chosen element is.
 
 6. How did you determine what should be an instance variable versus a local 
 variable?
@@ -293,7 +343,8 @@ variable?
 
 7. What do you feel is most improved in your refactored solution?
 
-    fdfd
-
+    In my refactored solution, I used "show_column.include?(@randomly_chosen_number)" 
+    instead of iterating through it like in the original one ("show_column.each_with_index { |item, index| }").  
+    It appears more readable this way.  
 
 =end
