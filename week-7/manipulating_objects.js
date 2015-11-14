@@ -15,10 +15,24 @@ var terah = {
 }
 // __________________________________________
 // Write your code below.
+var adam = {
+  name: "Adam", 
+};
 
-
-
-
+terah["spouse"] = adam;  // same as terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;  // same as delete terah["eyeColor"];
+terah.spouse.spouse = terah;  // same as adam.spouse = terah;
+terah["children"] = {};
+terah.children.carson = {};
+terah.children.carson.name = "Carson";
+terah.children["carter"] = {};
+terah.children.carter["name"] = "Carter";
+terah.children.colton = {};
+terah.children.colton.name = "Colton";
+adam.children = terah["children"];
+console.log(terah);
+console.log(adam);
 
 
 
@@ -28,6 +42,29 @@ var terah = {
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
+/*
+Release 3: Reflect
+In the reflection section of the manipulating_objects.js file, answer the following 
+questions:
+
+1. What tests did you have trouble passing? What did you do to make it pass? Why did 
+that work?
+  The only one that was challenging for me was "5. Remove the eyeColor property from terah."
+  Because I misunderstood the instruction at first.  In the beginning, I thought that it 
+  meant to remove the eyeColor value of "brown".  So I did "terah.eyeColor = null;".
+
+  Then when it didn't pass, I realized that it wanted the actual key/property to be 
+  gone.  So I looked up the keyword "delete" to make sure that I have the syntax correctly.  
+
+2. How difficult was it to add and delete properties outside of the object itself?
+  It was not really difficult to add and delete properties outside of the object itself.  
+
+3. What did you learn about manipulating objects in this challenge?
+  This challenge had some similarities to the "nested arrays" challenge in Ruby.  So 
+  that's what I learned.  
+  Also, I learned that I can use both the dot notation and the bracket notation to 
+  add and delete elements from an object.  
+*/
 //
 //
 //
