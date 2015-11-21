@@ -1,9 +1,10 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Nicola Beuscher
+// This challenge took me [4] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
+
 var votes = {
   "Alex": { president: "Bob", vicePresident: "Devin", secretary: "Gail", treasurer: "Kerry" },
   "Bob": { president: "Mary", vicePresident: "Hermann", secretary: "Fred", treasurer: "Ivy" },
@@ -54,7 +55,6 @@ voteCount would be ...
 
 */
 
-
 /* Once the votes have been tallied, assign each officer position the name of the
 student who received the most votes. */
 var officers = {
@@ -65,11 +65,72 @@ var officers = {
 }
 
 // Pseudocode
+/*
+Step 1: go through each "voter" in "votes"
+Step 2.  for each voter, look at the role (example: "president")
+  and count how many times a name appears.
+    Step 2.1 IF the name does not exist yet, 
+      create it and set the vote count to 1.
+    Step 2.2 IF the name exists already, 
+      add 1 to the vote count.
+
+Step 3: for each role, find the name with the highest number (vote count) associated with it.  
+  Assign that name to the associated role in "officers".
+*/
 
 
 // __________________________________________
 // Initial Solution
 
+for (var voter in votes) {
+  // console.log(votes[voter].president);
+  if (!voteCount.president[votes[voter].president]) {
+    voteCount.president[votes[voter].president] = 1;
+  } else {
+    voteCount.president[votes[voter].president] += 1;
+  }
+}
+
+for (var voter in votes) {
+  // console.log(votes[voter].president);
+  if (!voteCount.vicePresident[votes[voter].vicePresident]) {
+    voteCount.vicePresident[votes[voter].vicePresident] = 1;
+  } else {
+    voteCount.vicePresident[votes[voter].vicePresident] += 1;
+  }
+}
+
+for (var voter in votes) {
+  // console.log(votes[voter].president);
+  if (!voteCount.secretary[votes[voter].secretary]) {
+    voteCount.secretary[votes[voter].secretary] = 1;
+  } else {
+    voteCount.secretary[votes[voter].secretary] += 1;
+  }
+}
+
+for (var voter in votes) {
+  // console.log(votes[voter].president);
+  if (!voteCount.treasurer[votes[voter].treasurer]) {
+    voteCount.treasurer[votes[voter].treasurer] = 1;
+  } else {
+    voteCount.treasurer[votes[voter].treasurer] += 1;
+  }
+}
+
+console.log(voteCount);
+
+
+for (var role in voteCount) {
+  var largest = 0; 
+  for (var name in voteCount[role]) {
+    if (voteCount[role][name] > largest) {
+      largest = voteCount[role][name];  
+      officers[role] = name;
+    }
+  }
+}
+console.log(officers);
 
 
 
@@ -79,6 +140,29 @@ var officers = {
 // __________________________________________
 // Refactored Solution
 
+for (var voter in votes){
+  for (var role in votes[voter]){
+    if (!voteCount[role][votes[voter][role]]) {
+      voteCount[role][votes[voter][role]] = 1;
+    } else {
+      voteCount[role][votes[voter][role]] +=1
+    }
+  }
+}
+console.log(voteCount);
+
+
+for (var role in voteCount) {
+  var largest = 0; 
+  for (var candidate in voteCount[role]) {
+    if (voteCount[role][candidate] > largest) {
+      largest = voteCount[role][candidate];  
+      officers[role] = candidate;
+    }
+  }
+}
+console.log(officers);
+
 
 
 
@@ -86,6 +170,43 @@ var officers = {
 
 // __________________________________________
 // Reflection
+/*
+Release 5: Reflect
+In the reflection section in your "tally_votes.js" file, answer the following questions:
+
+1. What did you learn about iterating over nested objects in JavaScript?
+  I learned that iterating over nested objects in JavaScript is like iterating over nested 
+  hashes in Ruby, because the thing used to iterate can be chained.  
+
+  The difference is that in JS, you can use a dot notation and a bracket notation.  The 
+  dot notation is convenient for accessing/modifying the nested parts of an object if 
+  you know that the key of the method/function or inner nested object that you want 
+  exists inside your selected object.  The bracket notation is more flexible, because 
+  it allows you to do 2 things: 
+    1) IF the key name is surrounded by quotes, it is used to access/modify an 
+        existing nested object/function.  It's like a "property" of an object.  
+    2) IF the key name is just plain without quotes, it is used as a variable or 
+        placeholder for key names, the same way that variables are used regularly.  
+
+2. Were you able to find useful methods to help you with this?
+  We originally looked for some built-in methods/functions to use for refactoring, but 
+  we did not find any that suited our needs.  There was one called ".valueOf()", but it 
+  did the exact same thing using the dot notation or bracket notation, so we did not 
+  use it.  
+
+3. What concepts were solidified in the process of working through this challenge?
+  The initial solution was easy for us.  What was difficult was refactoring, because 
+  we initially got confused about the variable name inside "for ... in".  We made a 
+  lot of trial-and-errors and used a lot of "console.log()" just to see what that 
+  variable was supposed to be, and what it was containing.  Also, multiple-chained 
+  brackets and brackets-within-brackets.  I need more practice, and also I need to 
+  find a way that makes the chained brackets and brackets-within-brackets more 
+  readable, because I think that is what confused us.  
+
+  Also, I wish I thought of this earlier: we should have made a shorter sample input, 
+  so that it will be easier to check against, and so it would have been less confusing.  
+
+*/
 
 
 
