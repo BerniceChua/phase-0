@@ -68,7 +68,7 @@ population. The most populous state should be at the top:
 
 ## `persons` and `outfits` Schema
 <!-- Include a link to your schema design here -->
-![persons-outfits-schemas.png](https://raw.githubusercontent.com/BerniceChua/BerniceChua.github.io/master/imgs/persons-outfits-schemas.png)
+![persons-outfits-schemas.png](https://github.com/BerniceChua/phase-0/blob/master/week-8/database-intro/persons-outfits-schemas.png)
 persons-outfits-schemas.png
 
 
