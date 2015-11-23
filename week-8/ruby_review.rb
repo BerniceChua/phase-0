@@ -14,7 +14,25 @@ assert { name == "bettysue" }
 assert { name == "billybob" }
 
 # 2. Pseudocode what happens when the code above runs
+=begin
 
+Step 1: if the thing that gets asserted is true, 
+        this will be a condition to yield 
+        (yield is a keyword that means go outside the code block).
+Step 2: if the thing that gets asserted is false, 
+        it will give the error message "Assertion failed!"
+
+(The driver code has the variable name be assigned the value "bettysue"
+so the first assertion was true.  But the second assertion was a 
+different string called "billybob", so the assertion was false, 
+and we got the error message:
+"
+ruby week-8/ruby_review.rb
+week-8/ruby_review.rb:9:in `assert': Assertion failed! (RuntimeError)
+        from week-8/ruby_review.rb:14:in `<main>'
+"
+
+=end
 
 
 # 3. Copy your selected challenge here
@@ -29,7 +47,6 @@ assert { name == "billybob" }
 
 
 # 5. Reflection
-
 =begin
 
 Release 2: Reflect
