@@ -55,30 +55,63 @@ number_array = [5, [10, 15], [20,25,30], 35]
 #Inside this each loop we will add 5 to each element
 #if element is not array we will add 5
 
-for element in (0...number_array.length) do 
-  if number_array[element].kind_of?(Array)
-    for inner in (0...number_array[element].length) do 
-      number_array[element][inner] += 5
-    end
-  else
-    number_array[element] += 5
-  end
-end
+# for element in (0...number_array.length) do 
+#   if number_array[element].kind_of?(Array)
+#     for inner in (0...number_array[element].length) do 
+#       number_array[element][inner] += 5
+#     end
+#   else
+#     number_array[element] += 5
+#   end
+# end
 
-print number_array
-puts
+# print number_array
+# puts
+
+# # refactored:
+# number_array.map! { |element|
+#   if element.kind_of?(Array)
+#     element.map! {|inner| inner + 5}
+#   else
+#     element + 5
+#   end
+# }
+
+# def getInnerArray(inputArray)
+#   for element in (0...inputArray.length) do 
+#     print "element = "
+#     puts element
+#     if inputArray[element].kind_of?(Array)
+#       print "In the if -- inputArray[element] = "
+#       print inputArray[element]
+#       puts
+    
+#       getInnerArray(inputArray[element])
+#     else
+#       inputArray[element] += 5
+#       print "In the else -- inputArray[element] = "
+#       print inputArray[element]
+#       puts
+#     end
+#   end
+# end
 
 # refactored:
-number_array.map! { |element|
-  if element.kind_of?(Array)
-    element.map! {|inner| inner + 5}
-  else
-    element + 5
-  end
-}
+def getInnerArray(inputArray)
+  inputArray.map! { |element|
+    if element.kind_of?(Array)
+      # element.map! {|inner| inner + 5}
+      getInnerArray(inputArray[element])
+    else
+      element + 5
+    end
+  }
+end
+print getInnerArray(number_array)
+  puts
 
-print number_array
-puts
+# print number_array
+# puts
   
 # Bonus:
 
@@ -135,13 +168,13 @@ print startup_names_copy.each_index { |outtest_array_index|
     startup_names_copy[outtest_array_index] += "ly"
   end
 }
-puts "\nstartup_names (should be unchanged):"
-print startup_names
+# puts "\nstartup_names (should be unchanged):"
+# print startup_names
 
 
 # refactored:
-puts "\n\nAfter refactored with .map transformation:"
-puts "startup_names_copy:"
+# puts "\n\nAfter refactored with .map transformation:"
+# puts "startup_names_copy:"
 print startup_names.map { |element|
   if element.kind_of?(Array)
     element.map { | inner |
@@ -159,6 +192,19 @@ puts "\nstartup_names (should be unchanged):"
 print startup_names
 puts "\n\n"
 
+def addSuffix(names_array)
+  return names_array.map { |element|
+    if element.kind_of?(Array)
+      puts "In the if."
+      addSuffix(names_array[element])
+    else 
+      puts "In the else."
+      element.capitalize + "ly"
+    end
+  }
+end
+print "Add Suffix: "
+puts addSuffix(startup_names)
 
 =begin
 Release 5: Reflect
