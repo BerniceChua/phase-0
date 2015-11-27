@@ -1,3 +1,13 @@
+https://github.com/BerniceChua/phase-0/blob/master/week-9/ruby-review-1/ruby_review.rb
+
+https://github.com/BerniceChua/phase-0/blob/master/week-9/ruby-review-2/CarClass.rb
+
+
+
+
+
+
+
 # ruby-review-1 (Fibonacci) Release 2: Reflect
 In the reflection section in your ruby_review.rb file, answer the following questions:
 
@@ -33,6 +43,10 @@ Aside from that, I want to study more about databases and SQL.  I feel like our
 exposure to SQL in week 8 felt like an afterthought.  
 
 Also, I want more practice using JS to manipulate the DOM.  
+
+
+
+
 
 
 # ruby-review-2 (Car Class) Release 2: Reflect
