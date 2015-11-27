@@ -123,6 +123,9 @@ In the reflection section in your ruby_review.rb file, answer the following ques
   What is still confusing to me about Ruby is when I can use symbols to be what gets 
   returned by a class's method, like in the "guessing game" challenge.  
 
+  It is this one:
+  https://github.com/BerniceChua/phase-0/blob/master/week-6/guessing-game/my_solution.rb
+
 
 3. What are you going to study to get more prepared for Phase 1?
 
